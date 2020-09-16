@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 300px;
+				background-color: orange;
+				/* padding-left: 30px;
+				padding-top: 20px;
+				padding-bottom: 30px;
+				padding-right: 20px; */
+				/* 简写 */
+				padding: 20px 20px 30px 30px;
+			}
+			/* 需求 要让lnner这个盒子往右挪动 */
+			/* 1.margin 在lnner盒子上加外边距 */
+			/* 2.在box 外层盒子上加内边距 */
+			.lnner{
+				width: 350px;
+				height: 250px;
+				background-color: green;
+				/* margin-left: 20px; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="lnner">
+				这里是内部的内容
+			</div>
+			
+		</div>
+	</body>
+</html>

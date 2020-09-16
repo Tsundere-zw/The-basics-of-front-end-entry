@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<a id="link" href="http://www.baidu.com" title="我是百度">百度</a>
+		<img id="mv" src="img/a.jpg" alt="美女" >
+		
+		<script type="text/javascript">
+			var link = document.getElementById('link');
+			var mv = document.getElementById('mv');
+			
+			// 获取dom对象的属性值
+			console.log(link.id);
+			console.log(link.href);
+			console.log(link.title);
+			
+			console.log(mv.id);
+			console.log(mv.src);
+			console.log(mv.alt);
+			
+			// 设置dom对象的属性
+			link.href = 'http://www.google.com';
+			link.title = 'google';
+		</script>
+	</body>
+</html>

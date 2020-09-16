@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="按钮" id="btn">
+		<script type="text/javascript">
+			var btn = document.getElementById('btn');
+			addEventListener(btn, 'click', function() {
+				alert('hello world');
+			})
+			addEventListener(btn, 'click', function() {
+				alert('hello heima');
+			})
+			// 处理事件的兼容性问题
+			// eventName 不带on  click  mouseover   mouseout
+			function addEventListener(element, eventName, fn) {
+				// 判断当前浏览器是否支持addEventListener 方法
+				if (element.addEventListener) {
+					element.addEventListener(eventName, fn);  // 第三个参数默认false
+				} else if (element.attachEvent) {
+					element.attachEvent('on' + eventName, fn);	
+				} else {
+					// 相当于 element.onclik = fn;
+					element['on'+ eventName] = fn;
+				}
+			}
+		</script>
+	</body>
+</html>

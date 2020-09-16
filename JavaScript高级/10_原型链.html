@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 构造函数  原型对象  实例/对象  之间的关系
+			function Student(name, age, sex) {
+				this.name = name;
+				this.age = age;
+				this.sex = sex;
+				
+				this.sayHi = function() {
+					console.log('test');
+				}
+
+			}
+			Student.prototype.sayHi = function() {
+				console.log('大家好，我是' + this.name);
+			}
+			
+			// 通过Student构造函数创建的对象 可以访问Student.prototype中的成员
+			var s1 = new Student('lelei', 18, '男');
+			var s2 = new Student('hmm', 19, '女');
+			
+			s1.sayHi();
+			
+			// Student构造函数的原型对象
+			// var o = s1.__proto__;
+			// console.dir(o.__proto__);
+			
+			// // o.__proto__ Object的原型对象
+			// var o1 = o.__proto__;
+			// console.log(o1.__proto__);
+		</script>
+	</body>
+</html>

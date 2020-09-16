@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="container">
+			<div>11111</div>
+			<div>22222</div>
+			<p>ppppp</p>
+			<span>span</span>
+		</div>
+		<div>hello</div>
+		<div id="main">word</div>
+		<div>heima</div>
+		<p>heihei</p>
+		<span>111</span>
+		<script>
+			// 获取div以下的子文档可以用div的属性来调用
+			var container = document.getElementById('container');
+			var divs = container.getElementsByTagName('div');
+			console.log(divs);
+		</script>
+	</body>
+</html>

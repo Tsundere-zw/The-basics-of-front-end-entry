@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 需求：把百度搜索内嵌到自己的网页中 -->
+		<!-- 解决方案分析：
+			 最终百度跳转的页面是：http://www.baidu.com/s?wd=螺钉课堂
+			 把自己网页中的内容发送给百度处理：http://www.baidu.com/s
+			 -->
+		<!-- input type=text 表示是一个文本输入框 -->
+		<!-- input type=submit 表示一个提交按钮 相当于一个开关告诉form要发送一个数据 -->
+		<form action="http://www.baidu.com/s">
+			<!-- 把名字为wd的input输入框里面的内容发送给action：http://www.baidu.com/s -->
+		<input type="text" name="wd" /><input type="submit" value="百度一下"/>
+		</form>
+		<!-- 
+			value：表示表单项的值-->
+	</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>美女荷官</title>
+		<style type="text/css">
+			/* 所以css代码都写在这里 */
+			/* 选择器{
+				这里面写具体的规则
+			}
+			 */
+			/* 选择器的作用：查找到对应的html元素
+			 */
+			#pen{
+				width: 1000px;
+				height: 500px;
+				background-color: red;
+			}
+			#box{
+				/* color表示设置颜色 */
+				color: red;
+			}
+			/* 类选择器 */
+			.box2{
+				color: green;
+			}
+				p{
+					color: red;
+				}
+			.red{
+				color: red;
+			}
+		</style>
+		<!-- 这种方式的好处：让html代码和css分离 方便维护 -->
+		<link rel="stylesheet" type="text/css" href="style/index.css"/>        <!--相当于调用-->
+	</head>
+	<body>
+		<!-- 通过自定义名字来产生关联 -->
+		<!-- <div id="box2">这是一个盒子</div> -->
+		
+		<div id="box">这是一个box</div>
+			
+		<div id="pen">这是一个盒子</div>
+			
+		
+		<div class="box2">这是box2</div>
+
+		
+		<!-- 需求把p标签里面的元素都设置成红色 -->
+		<p>这是p1</p>
+		<p>这是p2</p>
+		<p>这是p3</p>
+		<p>这是p4</p>
+		<p>这是p5</p>
+		<!-- 需求把一下都设为红色 -->
+		<div class="red">这是div</div>
+		<p class="red">这是p=元素</p>
+		<h1 class="red">这是h1</h1>
+		
+		
+		
+	</body>
+</html>

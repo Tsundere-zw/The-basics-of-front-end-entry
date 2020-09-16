@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box1{
+				width: 600px;
+				height: 400px;
+				margin: 100px auto;
+				background-color: gray;
+				border: 1px solid gray;
+				position: relative;
+			}
+			.box2{
+				width: 400px;
+				height: 200px;
+				margin: 50px auto;
+				background-color: green;
+				/* 相对定位：相对于原来的位置发生偏移 */
+				/* position: relative; */
+			}
+			.box3{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				border-radius: 50%;
+				/* 绝对定位 */
+				/* 参照物：有定位属性的最近的父级元素 */
+				position: absolute;
+				/* left: 0; */
+				top: 20px;
+				right: 80px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div class="box2">
+				<div class="box3"></div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#box table {
+				border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="box"></div>
+	<script src="common.js"></script>
+	<script type="text/javascript">
+			// var s = {name: 'zs', subject: '语文', score:90};
+			// 模拟数据
+		var datas = [
+			{name: 'zs', subject: '语文', score: 90},
+			{name: 'ls', subject: '数学', score: 80},
+			{name: 'ww', subject: '英语', score: 70},
+			{name: 'zj', subject: '物理', score: 60},
+			{name: 'zw', subject: '化学', score: 90},
+			{name: 'zw', subject: '化学', score: 90}
+		];
+		// 表头数据
+		var headDatas = ['姓名', '科目', '成绩', '操作']
+		
+		// 1.创建table元素
+		var table = document.createElement('table');
+		my$('box').appendChild(table);
+		table.border = '1px';
+		table.width = '400px';
+		// 2.创建表头
+		var thead = document.createElement('thead');
+		table.appendChild(thead);
+		
+		var tr = document.createElement('tr');
+		thead.appendChild(tr);
+		tr.style.height = '40px';
+		tr.style.backgroundColor = 'lightgray';
+		
+		// 遍历头部数据 ，创建th
+		for (var i = 0; i < headDatas.length; i++) {
+			var th = document.createElement('th');
+			tr.appendChild(th);
+		    // th.setInnerText
+			setInnerText(th, headDatas[i]);
+		}
+		
+		// 3.创建数据行
+		var tbody = document.createElement('tbody');
+		table.appendChild(tbody);
+		for (var i = 0; i < datas.length; i++) {
+			// 一个学生的成绩 {name: 'ls', subject: '数学', score: 80}
+			var data = datas[i];
+			tr = document.createElement('tr');
+			tbody.appendChild(tr);
+			
+			var td = document.createElement('td');
+			tr.appendChild(td);
+			setInnerText(td, data.name);
+			
+			td = document.createElement('td');
+			tr.appendChild(td);
+			setInnerText(td, data.subject);
+		}
+	</script>
+	</body>
+</html>

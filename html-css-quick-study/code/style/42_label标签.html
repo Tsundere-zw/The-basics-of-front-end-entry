@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="">
+			<!-- 显式绑定 -->
+			<!-- 单选框太小，点的时候不容易被点中 如果想点击前面的文字就能实现选中该怎么办 -->
+			<label for="man">男：</label><input id="man" type="radio" name="sex"> <label for="woman"> 女：</label> <input id="woman" type="radio" name="sex">
+			<!-- 总结：扩大选区 -->
+			<!-- 隐式绑定 -->
+			<label>
+				不详：<input type="radio" name="sex">
+			</label>
+		</form>
+	</body>
+</html>

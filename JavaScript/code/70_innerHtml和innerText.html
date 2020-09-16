@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box">
+			我是一个div
+			<span>这是一个span</span>
+		</div>
+		
+		<b>123</b>
+		&lt;123&gt;
+		<script type="text/javascript">
+			var box = document.getElementById('box');
+			
+			// 获取不到标签地址的内容时 可以打印对象进行查询
+			// console.dir(box);
+			
+			// // innerHTML   innerText
+			// // 获取开始标签和结束标签之间的内容
+			
+			// // innerHTML  获取内容的时候  如果内容中有标签 会把标签也获取到
+			// // 原封不动把内容获取到
+			// console.log(box.innerHTML);
+			// // innerText  获取内容的时候  如果内容中有标签 会把标签过滤掉
+			// // innerText  会把前后的换行和空白都去掉 
+			// console.log(box.innerText);
+			
+			// 设置标签之间的内容
+			// box.u=innerHTML = '';  // 清空内容
+			
+			// 通过innerHTML 设置内容  如果内容中带标签 会以HTML的方式来解析
+			// box.innerHTML = '<b>黑马</b>程序猿';
+			// 通过innerText 设置内容  如果内容中带标签 在网页上会把标签显示出来
+			box.innerText = '<b>黑马</b>程序猿';
+		</script>
+	</body>
+</html>

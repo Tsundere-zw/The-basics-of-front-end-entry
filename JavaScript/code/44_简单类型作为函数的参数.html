@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			// 简单类型作为函数的参数，在内存中如何存储
+			function fn(a, b) {
+			// 函数的参数 其实就是函数内部的局部变量
+				a = a + 1;
+				b = b + 1;
+				console.log(a);
+				console.log(b);
+			}
+			
+			var x = 10;
+			var y = 20;
+			fn(x, y);
+			console.log(x, y);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

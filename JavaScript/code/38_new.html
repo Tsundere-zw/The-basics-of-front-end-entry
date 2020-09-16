@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			// Student 自定义构造函数
+			// 属性：name age sex score
+			// 方法： sayHi
+			function Student(name, age, sex, score) {
+				// 属性
+				this.name = name;
+				this.age = age;
+				this.sex = sex;
+				this.score = score;
+				// 方法
+				this.sayHi = function() {
+					console.log(this.name + ':hello');
+				}
+			}
+			var stu1 = new Student('sayyo', 18, '男',100);
+			var stu2 = new Student('sayyo', 18, '女',100);
+			
+			
+			// new的执行过程
+			// 1.在内存中创建了一个空的对象
+			// 2.让构造函数中的this指向刚刚创建的对象
+			// 3.执行构造函数,构造函数设置属性和方法 (当然也可以做其他的事情)
+			// 4.返回了当前对象
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			// 字符串的不可变
+			// var s = 'abc';
+			// s = 'xxxxyy';
+			// console.log(s);   // 打印的是新的内存空间里面的s   原来是的内存空间会被浏览器自动回收
+			
+			
+			// 当拼接大量字符串的时候 会有性能问题
+			var s = '';
+			for (var i = 0; i < 100000; i++) {
+				s = s +i;
+			}
+			console.log(s);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

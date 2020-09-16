@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			 /* 选中的是具有name 属性的元素
+				属性:在开始标签后面  属性名="值" 
+				可以理解为：[选择条件]*/
+			/* input[name]{
+				border: 1px solid red;
+			} */
+			/* 选中input中type=password的元素 */
+			/* input[type=password]{
+				border: 1px solid red;
+				} */
+				/* ^ 表示以什么东西开头的都会被选中 */
+				/* 选中input中 name值以u开头的那些元素 */
+				/* input[name^=user]{
+					border: 1px solid red;
+				} */
+				/* $ 表示以什么东西结尾
+				   选中input中 以name值以e结尾的那些元素*/
+				input[name$=e]{
+					border: 1px solid red;
+				}
+		</style>
+	</head>
+	<body>
+		<!-- 表单 type=text 输入框-->
+		<input type="text" name="username" id="" value="" />
+		<input type="text" />
+		<!-- type=password 密码框 -->
+		<input type="password" name="password" />
+		<div name="xiaoqiang"></div>
+	</body>
+</html>

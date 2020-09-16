@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#wrap{
+				/* 水平居中 */
+				margin: 50px auto;
+				width: 520px;
+				height: 280px;
+				position: relative;
+			}
+			ul{
+				margin: 0;
+				padding: 5px 10px 3px 0px;
+				/* 要根据外层的div #wrap来定位 */
+				position: absolute;
+				left: 258px;
+				top: 600px;
+				border-radius: 20px;
+				background-color: rgba(255,255,255,0.5);
+			}
+			li{				
+				list-style: none;
+				width: 10px;
+				height: 10px;
+				border-radius:50% ;
+				background-color: gray;
+				/* 让li在一行内显示 */
+				float: left;
+				margin-left: 5px;
+			}
+			.active{
+				background-color: red;
+			}
+			.span{
+				/* 箭头 */
+				width: 640px;
+				color: white;
+				position: absolute;
+				top: 300px;
+			}
+			span{
+				width: 20px;
+				height: 30px;
+				display: block;
+				line-height: 30px;
+				text-align: center;
+				background-color: rgba(6,6,6,0.5);
+			}
+			.left{
+				float: left;	
+			}
+			.right{
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="img">
+				<img src="../../img/head.jpg" >
+			</div>
+			<div class="span">
+				<span class="left"><</span>
+				<span class="right">></span>
+							<span></span>
+			</div>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>

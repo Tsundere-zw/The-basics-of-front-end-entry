@@ -1,0 +1,38 @@
+#map {
+	width: 800px;
+	height: 600px;
+	background-color: lightgray;
+	position: relative;
+}
+#up {
+	width: 100px;
+	height: 100px;
+	background-color: aqua;
+	top: 800px;
+	left: 220px;
+	position: absolute;
+}
+#right {
+	width: 100px;
+	height: 100px;
+	background-color: aqua;
+	top: 920px;
+	left: 340px;
+	position: absolute;
+}
+#left {
+	width: 100px;
+	height: 100px;
+	background-color: aqua;
+	top: 920px;
+	left: 100px;
+	position: absolute;
+}
+#down {
+	width: 100px;
+	height: 100px;
+	background-color: aqua;
+	top: 920px;
+	left: 220px;
+	position: absolute;
+}

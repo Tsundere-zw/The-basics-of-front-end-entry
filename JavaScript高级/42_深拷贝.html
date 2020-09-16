@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// 深拷贝-多层复制
+			var obj1 = {
+				name: 'zs',
+				age: 18,
+				sex: '男',
+				dog: {
+					name: '柴犬',
+					age: 2
+				},
+				friends: ['ls', 'ww']
+			};
+			
+			// 深拷贝 把o1的成员拷贝给o2
+			function deepCopy(o1, o2) {
+				for (var key in o1) {
+					// key 相当于一个字符串 获取对象o1的属性 从o1.[0]开始
+					// 获取属性对应的值
+					var item = o1[key];
+					
+					// 如果item是对象呢?
+					// var o = {}
+					if (item instanceof Object) {
+						// var o = {};
+						o2[key] = {};
+						deepCopy(item, o2[key]);
+					} else if (item instanceof Array) {
+						// 如果item是数组呢?
+						// var arr = [];
+						o2[key] = []
+						deepCopy(item, o2[key]);
+					} else {
+						// 如果是简单类型
+						o2[key] = o1[key];
+					}
+				}
+			}
+			
+			var obj2 = {};
+			
+			deepCopy(obj1, obj2);
+			
+			// 修改obj1中的成员  是否会影响obj2？
+			obj1.dog.name = 'xxx';
+			obj1.friends[0] = 'xx';
+			
+			console.dir(obj2);
+			console.dir(obj1);
+		</script>
+	</body>
+</html>

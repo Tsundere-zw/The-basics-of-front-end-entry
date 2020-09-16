@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 在内容之后插入 content里面的值 */
+			a::after{
+				content: "搜索一下";
+				color: red;
+			}
+			/* 在内容之前插入content里面的内容 */
+			a::before{
+				content: "noding";
+				color: green;
+			}
+			.clearfix:after{
+				content: ".";
+				display: block;
+				height: 0;
+				/* 隐藏 */
+				visibility: hidden;
+				clear: both;
+			}
+			.box{
+				width: 300px;
+			}
+			.left{
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			.right{
+				float: right;
+				width: 200px;
+				height: 100px;
+				background-color: green;
+			}
+			#box2{
+				width: 500px;
+				height: 100px;
+				background-color: black;
+			}
+			.clear{
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="">百度</a>
+		<div class="box clearfix">
+			<div class="left">left</div>
+			<div class="right">right</div>
+			
+		</div>
+		<div id="box2">
+			
+		</div>
+	</body>
+</html>

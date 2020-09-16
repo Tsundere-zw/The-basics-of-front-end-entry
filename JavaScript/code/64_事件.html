@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id = 'btn' value = '点我'>
+		
+		<div id = 'main'>aa</div>
+		<script type="text/javascript">
+			// 事件: 当什么时候做什么事情
+			// 		触发 - 响应
+			// 1.获取按钮
+			var btn = document.getElementById('btn');
+			// 2.给按钮注册事件
+			// 事件名称 click
+			// 事件源：谁触发的事件
+			// 事件处理函数：
+			btn.onclick = function () {
+				alert('别点我');
+			}
+			// 给div注册事件
+			var div = document.getElementById('main');
+			div.onclick = function () {
+				alert('我是div');
+			}
+		</script>
+	</body>
+</html>

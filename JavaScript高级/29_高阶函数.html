@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// 高阶函数
+			// 1 函数作为参数
+			// function eat(fn) {
+			// 	setTimeout(function() {
+			// 		console.log("吃晚饭");
+			// 		// 吃完晚饭之后做的事情
+			// 		fn();
+			// 		// fn为eat里面的function函数
+			// 	},2000);
+			// }
+			
+			// eat(function () {
+			// 	console.log('去唱歌');
+			// });
+			
+			
+			// arr.sort(function(a, b) {
+			// 	return a - b;
+			// });
+			
+			// console.log(arr);
+			
+			// arr.mySort()
+			
+			// Array.prototype.mySort = function(fn) {
+			// 	for (var i = 0; i < this.length - 1; i++) {
+			// 		var isSort = true; // 假设排好序
+			// 		for (var j = 0; j < this.length - i - 1; j++) {
+			// 			if (fn(this[j], this[j + 1]) > 0) {
+			// 				isSort = false;
+			// 				var tmp = this[j];
+			// 				this[j] = this[j + 1];
+			// 				this[j + 1] = tmp;
+			// 			}
+			// 		}
+			// 		if (isSort) {
+			// 			break;
+			// 		}
+			// 	}
+			// };
+			
+			// var arr = [35, 1, 6, 20];
+			// arr.mySort(function(a, b) {
+			// 	return a - b;
+			// });
+			
+			// console.log(arr);
+			
+			
+			
+			
+			
+			
+			// 2 函数作为返回值的时候
+			
+			// 写一个函数  生成1-10之间的随机数
+			// function getRandom() {
+			// 	return parseInt(Math.random() * 10) + 1;
+			// }
+			// console.log(getRandom());
+			
+			// 写一个函数  生成1-10之间的随机整数
+			// 第一次调用生成随机数  以后每次调用都返回第一次的随机值
+			
+			// function getRandom() {
+			// 	var random = parseInt(Math.random() * 10) + 1;
+			// 	return function () {
+			// 		return random;
+			// 	}
+			// }
+			
+			// var fn = getRandom();
+			
+			// console.log(fn());
+			// console.log(fn());
+			// console.log(fn());
+			
+			// 求两个数的和
+			// 100 + m 
+			// 1000 + m
+			// 10000 + m
+			
+			function getFun(n) {
+				return function (m) {
+					return n + m;
+				}
+			}
+			
+			// 求100 + m
+			var fn100 = getFun(100);
+			// 求1000 + m
+			var fn1000 = getFun(1000);
+			
+			console.log(fn100(10));
+			console.log(fn1000(10));
+		</script>
+	</body>
+</html>

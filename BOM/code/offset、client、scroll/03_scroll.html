@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			#box {
+				height: 100px;
+				width: 100px;
+				margin: 50px;
+				border: 30px solid red;
+				padding: 10px;
+				background-color: green;
+				/* 当内容超出自动产生滚动条 */
+				overflow: auto;  
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			小明跟小华到动物园玩耍  看见狮子的时候非常高兴 于是上前玩耍 他们都是非常喜欢狮子的人
+			 玩的非常开心  动物园成为了他们最想去的地方 他们每次放假都会去动物园玩耍
+		</div>
+		<script type="text/javascript">
+			// scroll
+			var box = document.getElementById('box');
+			// 当拖动box中的滚动条的时候触发
+			box.onscroll = function() {
+				// 给出的是滚动出去的距离  不是滚动条下拉的距离
+				console.log(box.scrollLeft);
+				console.log(box.scrollTop);
+			};
+			
+			
+			
+			// box滚动出去的距离
+			// console.log(box.scrollLeft);
+			// console.log(box.scrollTop);
+			
+			// // 内容的大小 包括padding和未显示的内容 不包括滚动条
+			// console.log(box.scrollWidth);
+			// console.log(box.scrollHeight);
+			
+			// // 元素的大小 + padding  不包括滚动条
+			// console.log(box.clientWidth);
+			// console.log(box.clientHeight);
+		</script>
+	</body>
+</html>

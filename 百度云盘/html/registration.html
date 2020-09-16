@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background-color: #e9e9e9;
+			}
+			.landing {
+				height: 610px;
+				width: 1175px;
+				display: grid;
+				grid-template-columns: 1fr 4fr;
+				margin: 50px auto;
+			}
+			.landing-left {
+				background-color: #f3f3f3;
+			}
+			.landing-left h1 {
+				padding-left: 70px;
+				font-size: 20px;
+				color: #b4e8f3;
+			}
+			.langding-right {
+				padding-top: 50px;
+				padding-left: 50px;
+				background-color: #ffffff;
+				box-shadow: 5px 5px #f3f3f3;
+			}
+			.landing .input {
+				width: 350px;
+				height: 42px;
+			}
+			.gap {
+				margin-bottom: 20px;
+			}
+			.first {
+				color: #999999;
+				font-size: 14px;
+			}
+			.tip {
+				color: #999999;
+				font-size: 14px;
+			}
+			.tips {
+				font-size: 14px;
+			}
+			.forgetpd {
+				font-size: 18px;
+			}
+			.argee {
+				padding-left: 50px;
+			}
+			.argee a {
+				font-size: 12px;
+				text-decoration: none;
+				color: blue;
+			}
+			.btn {
+				margin-left: 40px;
+				height: 50px;
+				width: 380px;
+				font-size: 18px;
+				color: white;
+				background-color: red;
+				border: none;
+				border-radius: 5px 5px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="landing">
+			<div class="landing-left">
+				<h1>注册方式</h1>
+			</div>
+			<div class="langding-right">
+			<div class=" Registration gap">
+				<span class="first">注册邮箱:</span>
+				<input type="text" class="input">
+				<span class="tip">请输入常用邮箱以便及时获取信息</span>
+			</div>
+			<div class="username gap">
+				<span class="first">用户昵称:</span>
+				<input type="text" class="input">
+				<span class="tips">用户昵称由3-15个字符组成,将在捐赠公示中显示</span>
+			</div>
+			<div class="password gap">
+				<span class="first">用户密码:</span>
+				<input type="password" class="input">
+				<span class="tip">区分大小写,长度6-16个字符</span>
+			</div>
+			<div class="Confirm-pd gap">
+				<span class="first">确认密码:</span>
+				<input type="password" class="input">
+			</div>
+			<div class="argee gap">
+				<input type="checkbox" class="forgetpd">
+				<a href="">我已阅读并同意本网站注册条款</a>
+			</div>
+			<button class="btn">注册</button>
+			</div>
+		</div>
+	</body>
+</html>

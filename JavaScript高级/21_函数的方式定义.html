@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// 1 函数声明
+			// function fn() {
+			// 	console.log('test');
+			// }
+			// fn();
+			
+			// 2 函数表达式
+			// var fn = function() {
+			// 	console.log('test');
+			// }
+			
+			// 函数声明和函数表达式的区别
+			// function fn() {
+			// 	console.log('test');
+			// }
+			// fn();
+			
+			// var fn1 = function() {
+			// 	console.log('test');
+			// }
+			// fn1();
+			
+			// 根据条件声明函数
+			// 现代浏览器  不会提升if语句中的函数声明
+			// if (true) {
+			// 	function fn() {
+			// 		console.log('fn - true');
+			// 	}
+			// } else {
+			// 	function fn() {
+			// 		console.log('fn - false');
+			// 	}
+			// }
+			// fn();
+			
+			// 在老的IE版本中  if语句中的函数声明也会提升
+			
+			var fn;
+			if (true) {
+				fn = function() {
+					console.log('fn - true');
+				}
+			} else {
+				fn = function() {
+					console.log('fn - false');
+				}
+			}
+			fn();
+		</script>
+	</body>
+</html>

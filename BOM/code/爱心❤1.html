@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box1 {
+				position: relative;
+				height: 100px;
+				width: 100px;
+				background-color: red;
+				margin: 200px auto;
+				transform: rotate(45deg) scale(1.2);
+				animation: move 1s infinite alternate;
+			}
+			@keyframes move {
+			    100%{
+			        transform: scale(1.2);/*变大1.2倍*/
+			    }
+			}
+			.box1::before, .box1::after {
+				position: absolute;
+				content: '';
+				border-radius: 50%;
+				height: 100px;
+				width: 100px;
+				background-color: red;
+				/* box-shadow: 0 0 40px red; */
+			}
+				
+			.box1::before {
+				left: -60px;
+				/* transform: rotate(45deg); */
+			}
+			.box1::after {
+				/* transform: rotate(-45deg); */
+				top: -60px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+	</body>
+</html>

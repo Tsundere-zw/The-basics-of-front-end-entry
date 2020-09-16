@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// // 案例 1
+			// function getRandom() {
+			// 	var random = parseInt(Math.random() * 10) + 1;
+			// 	return function() {
+			// 		return random;
+			// 	}
+			// }
+			// var fn = getRandom();
+			// console.log(fn());
+			// console.log(fn());
+			
+			// 案例 2 
+			function getFun(n) {
+				return function (m) {
+					return n + m;
+				}
+			}
+			
+			// 求 100 + m
+			var fn100 = getFun(100);
+			// 求 1000 + m
+			var fn1000 = getFun(1000);
+			
+			console.log(fn100(10));
+			console.log(fn1000(10));
+		</script>
+	</body>
+</html>

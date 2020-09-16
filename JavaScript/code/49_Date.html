@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			// Math对象和Date对象的区别
+			
+			// Math不是一个构造函数，里面提供的是静态成员
+			// var MyMath = {
+			// 	PI: 3.14;
+			// 	max: function () {
+					
+			// 	}
+			// }
+			// 静态成员
+			// MyMath.PI
+			// MyMath.max();
+			
+			
+			// Date 是一个构造函数,首先要通过new Date() 来创建日期实例(对象),实例成员
+			// var d = new Date();
+			// console.log(d);
+			
+			
+			// GMT 格林威治时间  世界标准时间 英国的一个小镇
+			// GMT+0800 (中国标准时间)
+			
+			// 距离1970-1-1相差的毫秒数
+			// console.log(d.valueOf());
+			
+			// 日期构造函数 Date()
+			
+			// 1.空的构造函数  获取的是当前时间对象
+			// var d = new Date();
+			// console.log(d);
+			// console.log(d.valueOf());
+			// 2.构造函数中传入毫秒值
+			// var d = new Date(1502088177998);
+			// console.log(d);
+			
+			// 3.可以传入日期形式的字符串
+			// var d = new Date('1998-8-8 8:8:8');
+			// console.log(d);
+			
+			// 4.可以传入数字
+			// var d = new Date(1928, 8, 8);
+			// console.log(d);
+			// console.log(d.valueOf());  //距离1970年的毫秒数  
+			
+			
+			
+			// 如何获取日期对象的毫秒值
+			// var d = new Date;
+			// 在获取日期对象的毫秒值   不用我们调用
+			// console.log(d.valueOf());
+			// 和valueOf功能一样
+			// console.log(d.getTime());
+			
+			// 获取当前时间的毫秒值   静态成员
+			// var num = Date.now();          // 浏览器兼容问题  html5
+			// console.log(num);
+			
+			// +  在这里是取正
+			// var num = Number(new Date());
+			
+			var num = + new Date();	
+			console.log(num);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			// 1.concot()  合并两个数组
+			// arr1 = [1, 2, 3, 4];
+			// arr2 = ['a', 'b'];	
+			// console.log(arr1.concat(arr2));
+			
+			// 2.slice() 从当前数组中截取一个新的数组，不影响原来的数组，参数start从0开始,end从1开始
+			// const animals = ['ant', 'bison', 'camel', 'duck', 'elephant']; // const声明的不能再次使用以及赋值
+			
+			// console.log(animals.slice(2));
+			// // expected output: Array ["camel", "duck", "elephant"]
+			
+			// console.log(animals.slice(2, 4));
+			// // expected output: Array ["camel", "duck"]
+			
+			// console.log(animals.slice(1, 5));
+			// // expected output: Array ["bison", "camel", "duck", "elephant"]
+			
+			// splice()	//删除或替换当前数组的某些项目，参数start, deleteCount, options(要替换的项目)
+			// var myFish = ["angel", "clown", "mandarin", "sturgeon"];
+			// var removed = myFish.splice(2, 0, "drum");
+			// // 从第2位开始删除0个元素，插入drum  -- 位置在数组的第2个
+			
+			// 运算后的 myFish: ["angel", "clown", "drum", "mandarin", "sturgeon"]
+			// 被删除的元素: [], 没有元素被删除
+			
+			var arr = [1, 2, 3, 4];
+			
+			// // 清空数组
+			// arr = [];
+			// console.log(arr);
+			
+			// arr.length = 0;
+			// console.log(arr);
+			
+			// 第一个参数 是从什么位置开始删的
+			// 第二个参数 删除多少个元素
+			// arr.splice(0, arr.length);
+			// console.log(arr);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<a id="link" href="http://www.baidu.com">baidu</a>
+		<script type="text/javascript">
+			var link = document.getElementById('link');
+			link.onclick = function(e) {
+				alert('hello');
+				
+				// 取消默认行为
+				// return false;
+				
+				// DOM标准方法
+				// e.preventDefault();
+				
+				// IE的老版本, 非标准方式
+				// e.returnValue = false;
+			}
+		</script>
+	</body>
+</html>

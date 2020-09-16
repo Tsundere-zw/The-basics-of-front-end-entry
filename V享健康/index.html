@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="shortcut icon" href="images/logo.png">
+		<script src="libs/scrollReveal/scrollreveal.min.js"></script>
+		<script src="libs/response/index.js"></script>
+		
+		<!-- 小图标由这个引用的 -->
+		<link
+			  rel="stylesheet"
+		      href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css" 
+		    />
+			<!-- 轮播图库 -->
+			<link rel="stylesheet" href="libs/glide/glide.core.min.css">
+			<link rel="stylesheet" href="libs/glide/glide.theme.min.css">
+		<link rel="stylesheet" href="index.css"/>
+		<title>V享健康</title>
+		
+	</head>
+	<body>
+		<header>
+			<div class="logo">V享健康</div>
+			<nav>
+				<a href="#home">首页</a>
+				<a href="#about-us">关于我们</a>
+				<a href="#showcases">成功案例</a>
+				<a href="#service">服务流程</a>
+				<a href="#team-intro">团队介绍</a>
+				<a href="#company-activities">健康动态</a>
+				<i class="fas fa-search"></i>	
+			</nav>
+			<div class="burger">
+			<div class="burger-line1"></div>
+			<div class="burger-line2"></div>
+			<div class="burger-line3"></div>
+			</div>
+		</header>
+		<div id="home" class="glide">
+			<div class="glide__track" data-glide-el='track'>
+				<div class="glide__slides">
+					<div class="glide__slide">
+						<div class="slide-caption">
+							<h1>V享健康——量身打造你的健康管理计划</h1>
+							<h3>线上健康管理，实时掌控你的健康数据，给您最好的用户体验</h3>
+							<button class="explore-btn">探索更多</button>	
+						</div>
+						<div class="backrop"></div>
+						<img src="images/exercise01.jpg" >
+					</div>
+					<div class="glide__slide">
+						<div class="slide-caption left">
+							<h1>健康管理生活</h1>
+							<h3>你的生活就此充满新的活力，健康生活改变你的生活习惯</h3>
+							<button class="explore-btn">探索更多</button>
+						</div>
+						<div class="backrop"></div>
+						<img src="images/exercise03.jpg" >
+					</div>
+				</div>
+			</div>
+			<div class="glide__arrows" data-glide-el="controls">
+				<button class="glide__arrow glide__arrow-left" data-glide-dir="<">
+				<
+				</button>
+				<button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+				>
+				</button>
+			</div>
+			<div class="glide__bulletes" data-glide-el='controls[nav]'>
+				<button class="glide__bullet" data-glide-dir="=0"></button>
+				<button class="glide__bullet" data-glide-dir="=1"></button>
+			</div>
+		</div>
+		<div class="content-weapper">
+			<section id="about-us" class="about-us">
+				<h2 class="title1">关于我们</h2>
+				<p class="intro">
+					通过云计算、移动互联技术实现对用户的移动健康管理服务，打造让实体、用户双赢的健康管理平台。
+				</p>
+				<div class="features">
+					<div class="feature">
+						<i class="fas fa-utensils"></i>
+						<h4 class="feature-title">饮食健康</h4>
+						<p class="feature-content">通过大数据分析，为用户推荐健康饮食</p>
+					</div>
+					<div class="feature">
+						<i class="fas fa-dumbbell"></i>
+						<h4 class="feature-title">日常锻炼</h4>
+						<p class="feature-content">通过大数据分析，实时了解用户的身体健康状态，进行相应的健康管理</p>
+					</div>
+					<div class="feature">
+						<i class="fas fa-briefcase-medical"></i>
+						<h4 class="feature-title">药品药店</h4>
+						<p class="feature-content">实行线上药品销售，平台将提供专人“送药上门”服务。</p>
+					</div>
+					<div class="feature">
+						<i class="fas fa-biking"></i>
+						<h4 class="feature-title">线上健身俱乐部</h4>
+						<p class="feature-content">根据用户体质，实时健康打卡形式进行督促用户健身锻炼</p>
+					</div>
+					<div class="feature">
+						<i class="fas fa-kaaba"></i>
+						<h4 class="feature-title">线下健身俱乐部</h4>
+						<p class="feature-content">平台将提供使用查询、线下预约以及调整预约等便捷功能。</p>
+					</div>
+				</div>
+			</section>
+			<section id="showcases" class="showcases section-bg">
+				<h2 class="title1">成功案例</h2>
+				<div class="filter-btns">
+					<button class="filter-btn active" data-filter='*'>全部</button>
+					<button class="filter-btn" data-filter='.exercise'>锻炼</button>
+					<button class="filter-btn" data-filter='.diet'>饮食</button>
+					<button class="filter-btn" data-filter='.medicament'>医药</button>
+					<button class="filter-btn" data-filter='.club'>俱乐部</button>
+
+				</div>
+				<div class="cases">
+					<div class="case-item exercise">
+						<img src="images/exercise01.jpg" >
+					</div>
+					<div class="case-item exercise">
+						<img src="images/exercise02.jpg" >
+					</div>
+					<div class="case-item diet">
+						<img src="images/diet01.jpg" >
+					</div>
+					<div class="case-item diet">
+						<img src="images/diet02.jpg" >
+					</div>
+					<div class="case-item diet">
+						<img src="images/diet03.jpg" >
+					</div>
+					<div class="case-item medicament">
+						<img src="images/medicament01.jpg" >
+					</div>
+					<div class="case-item mobile medicament">
+						<img src="images/medicament02.jpg" >
+					</div>
+					<div class="case-item medicament">
+						<img src="images/medicament03.jpg" >
+					</div>
+					<div class="case-item club">
+						<img src="images/The club01.jpg" >
+					</div>
+					<div class="case-item club">
+						<img src="images/The club02.jpg" >
+					</div>
+					<div class="case-item exercise">
+						<img src="images/exercise04.jpg" >
+					</div>
+					<div class="case-item medicament">
+						<img src="images/medicament04.jpg" >
+					</div>
+				</div>
+			</section>
+			<section id="service" class="service">
+				<h2 class="title1">服务流程</h2>
+				<p class="intro">
+					健康管理平台，提供健康生活基础服务（如饮食、锻炼、药物）和线上、线下健身俱乐部合作等业务
+				</p>
+				<div class="services">
+					<div class="service-item">
+						<i class="fas fa-comments"></i>
+						<h2 class="service-title">体质评估</h2>
+						<p class="service-content">根据用户身体状况进行体质评估</p>
+					</div>
+					<div class="service-item">
+						<i class="fas fa-sign-in-alt"></i>
+						<h2 class="service-title">需求分析</h2>
+						<p class="service-content">根据用户的需求进行分析，提出较为完善的健康计划</p>
+					</div>
+					<div class="service-item">
+						<i class="fas fa-file-signature"></i>
+						<h2 class="service-title">达成计划</h2>
+						<p class="service-content">用户确定健康计划，进行方案的浏览</p>
+					</div>
+					<div class="service-item">
+						<i class="fas fa-user"></i>
+						<h2 class="service-title">执行阶段</h2>
+						<p class="service-content">用户对健康计划执行，每天用打卡方式记录</p>
+					</div>
+					<div class="service-item">
+					    <i class="fas fa-chalkboard-teacher"></i>
+					    <h2 class="service-title">成果验收</h2>
+					    <p class="service-content">用户对健康计划的执行成果进行验收，进行满意程度打分</p>
+					</div>
+					<div class="service-item">
+					    <i class="fas fa-user-check"></i>
+					    <h2 class="service-title">效果展示</h2>
+					    <p class="service-content">对自己锻炼成果满意的用户，可进行健康风采展示，供他人学习</p>
+					</div>
+				</div>
+			</section>
+			<section id="team-intro" class="team-intro section-bg">
+				<h2 class="title1">团队介绍</h2>
+				<div class="team-numbers">
+					<div class="team-number">
+						<div class="profile-image">
+							<img src="./images/man-wearing-black-suit-2955376.jpg" >
+						</div>
+						<h4 class="name">张原川</h4>
+						<p class="position">前端工程师</p>
+						<ul class="social-links">
+							<li>
+								<a href=''><i class="fab fa-weixin"></i></a>
+							</li>
+							<li>
+								<a href=''><i class="fab fa-weibo"></i></a>
+							</li>
+							<li>
+								<a href=''><i class="fab fa-github"></i></a>
+							</li>
+							<li>
+								<a href=''><i class="fab fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="team-number">
+						<div class="profile-image">
+							<img src="./images/business-woman-2697954_1920.jpg" >
+						</div>
+						<h4 class="name">骚东西</h4>
+						<p class="position">UI工程师</p>
+						<ul class="social-links">
+							<li>
+								<a href=''><i class="fab fa-weixin"></i></a>
+							</li>
+							<li>
+								<a href=''><i class="fab fa-weibo"></i></a>
+							</li>
+							<li>
+								<a href=''><i class="fab fa-github"></i></a>
+							</li>
+							<li>
+								<a href=''><i class="fab fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="team-number">
+						<div class="profile-image">
+							<img src="./images/selective-focus-photograph-of-man-wearing-gray-suit-jacket-1138903.jpg" >
+						</div>
+						<h4 class="name">李四</h4>
+						<p class="position">后端工程师</p>
+						<ul class="social-links">
+							<li>
+								<a href=''><i class="fab fa-weixin"></i></a>
+							</li>
+							<li>
+								<a href=''><i class="fab fa-weibo"></i></a>
+							</li>
+							<li>
+								<a href=''><i class="fab fa-github"></i></a>
+							</li>
+							<li>
+								<a href=''><i class="fab fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="team-number">
+						<div class="profile-image">
+							<img src="./images/smiling-woman-wearing-black-sweater-1587009.jpg" >
+						</div>
+						<h4 class="name">小漂亮</h4>
+						<p class="position">市场专员</p>
+						<ul class="social-links">
+							<li>
+								<a href=''><i class="fab fa-weixin"></i></a>
+							</li>
+							<li>
+								<a href=''><i class="fab fa-weibo"></i></a>
+							</li>
+							<li>
+								<a href=''><i class="fab fa-github"></i></a>
+							</li>
+							<li>
+								<a href=''><i class="fab fa-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</section>
+			<section class="data-section">
+				<div class="data-piece">
+					<i class="fa fa-code"></i>
+					<div class="num">156</div>
+					<div class="data-desc">个合作</div>
+				</div>
+				<div class="data-piece">
+					<i class="fa fa-award"></i>
+					<div class="num">288</div>
+					<div class="data-desc">奖项</div>
+				</div>
+				<div class="data-piece">
+					<i class="fa fa-laugh-wink"></i>
+					<div class="num">1588</div>
+					<div class="data-desc">位客户</div>
+				</div>
+				<div class="data-piece">
+					<i class="fa fa-folder"></i>
+					<div class="num">200</div>
+					<div class="data-desc">个计划</div>
+				</div>
+			</section>
+			<section id="company-activities" class="company-activities">
+				<h2 class="title1">健康动态</h2>
+				<p class="intro">关注健康动态，第一时间获取健康消息</p>
+				<div class="activities">
+					<div class="activity">
+						<div class="act-image-wrapper">
+							<img src="images/run.jpg">
+						</div>
+						<div class="meta">
+							<p class="data-published">
+								<i class="far fa-calendar"></i>2020年6月1日
+							</p>
+							<p class="comments">
+								<i class="fa fa-comments" ></i>55条评论
+							</p>
+						</div>
+						<h2 class="act-title">关于空腹跑</h2>
+						<article> 空腹跑为什么减脂效果比较好，因为空腹时体内血糖含量较低，跑步动用的脂肪供能的比例增大，从而可以消耗更多的脂肪。所以减脂可以选择空腹跑。但是空腹跑并不是适合所有人
+							有低血糖的人不建议空腹跑
+							没有运动基础的也不建议空腹跑
+							上年纪的人不建议空腹跑哦
+							
+							
+							因为早晨空腹跑真的不是所有人都可以，会比较吃力。我是评估过自己的身体素质，和之前有一定的运动基础，才开始空腹跑。
+							一开始不适应确实会比较累，我跑了一个多星期才开始慢慢适应。
+							大概一个月左右的空腹跑步加上规律饮食，体脂有明显下降了。
+							但是，大家要先评估自己的身体状况，看看自己适不适合空腹跑，毕竟安全第一！
+							
+							在跑步结束后，要适当补充水分，最好的就是适量摄入盐水更有利健康。运动后适宜多吃水果蔬菜，补充矿物质和维生素。
+							
+							如果不能空腹跑，可以在跑前吃一根香蕉或者一小片面包等含有糖分的物质，也可以喝一点点温的蜂蜜水或者蔬果汁，补充一点能量再跑。
+							
+							不管是不是空腹跑，每天坚持跑运动+规律的饮食和作息，都可以达到减脂的效果的！</article>
+						<button class="read-more-btn">阅读更多</button>
+					</div>
+					<div class="activity">
+						<div class="act-image-wrapper">
+							<img src="images/eat.jpg">
+						</div>
+						<div class="meta">
+							<p class="data-published">
+								<i class="far fa-calendar"></i>2020年6月1日
+							</p>
+							<p class="comments">
+								<i class="fa fa-comments" ></i>38条评论
+							</p>
+						</div>
+						<h2 class="act-title">减脂期七天食谱给你</h2>
+						<article> 不要节食也不要不吃，碳水，蛋白质，优质脂肪缺一不可。要健康饮食！千万不要把不让你吃垃圾食品了理解为节食。生活状态是个循环，良好的开始，然后坚持走一段，就会越来越自律！
+
+							一周食谱参考：第1天减肥餐
+							七天早餐：牛奶一杯、鸡蛋一个，全麦土司两片。
+							加餐：一个小苹果
+							午餐：米饭半碗、蔬菜一份，几块瘦肉。
+							加餐：酸奶
+							晚餐：水煮蛋一个、苹果一个,素菜一份。
+							第2天减肥餐
+							加餐：脱脂奶一盒
+							午餐：米饭半碗、素菜一份，水煮鸡胸肉五块。（可换成比较方便的瘦肉）
+							加餐：猕猴桃一个
+							晚餐：鸡蛋一个，水果沙拉一份
+							第3天减肥餐
+							加餐：一个小苹果
+							午餐：素水饺一份、蜂蜜水一杯。
+							加餐：酸奶
+							晚餐：一碗小米粥、一个苹果。
+							第4天减肥餐
+							加餐：酸奶
+							午餐：米饭半碗、苦瓜炒鸡蛋一盘或者其他清炒青菜，有肉也可以。
+							加餐：梨子一个
+							晚餐：小紫薯一个、白菜汤一份。
+							第5天减肥餐
+							加餐：坚果五颗或者一个小苹果
+							午餐：米饭半碗、青菜半碗，几块肉。
+							加餐：脱脂牛奶
+							晚餐：蔬菜沙拉一份，南瓜半小碗。
+							第6天减肥餐
+							加餐：坚果五颗
+							午餐：白粥一份、菠菜豆腐一份，牛排一份。
+							加餐：酸奶
+							晚餐：青菜一份、水煮蛋一个，苹果一个。 
+							第7天减肥餐
+							加餐：酸奶
+							午餐：白米饭半碗、清蒸鲈鱼半条，青菜半碗。
+							加餐：西红柿一个
+							 晚餐：素菜一份、半个玉米
+							细嚼慢咽每餐7-8分饱，可以少吃多餐，制作过程一定要少油少盐少糖！拒绝油炸食品！</article>
+						<button class="read-more-btn">阅读更多</button>
+					</div>
+					<div class="activity">
+						<div class="act-image-wrapper">
+							<img src="images/eat02.jpg">
+						</div>
+						<div class="meta">
+							<p class="data-published">
+								<i class="far fa-calendar"></i>2020年6月1日
+							</p>
+							<p class="comments">
+								<i class="fa fa-comments" ></i>33条评论
+							</p>
+						</div>
+						<h2 class="act-title">营养均衡饮食</h2>
+						<article> 吃的哲学在于营养均衡，营养充分很容易，难的是要保证重要元素的摄取可以达到最好配置。所以营养篇第一课就是千万别偏食，增高的重要秘诀就是要特别补是蛋白质、钙质和维生素，其中鱼、虾、瘦肉、禽蛋、花生、豆制品中都富含优质蛋白质，应注意多补充。牛奶、虾皮、豆制品、排骨、骨头汤、海带、紫菜等是含钙、磷丰富的食物。
+							另外记得多晒太阳，钙质才容易吸收。多吃蔬菜水果，补维生素，很多人没有真正理解“维生素是维持生命的要素，是人体生长发育所必不可少的”。
+							禁忌1：零食。少吃零食，特别是高糖和高热的垃圾食品、快餐。肯德基这些千万少吃。
+							禁忌2：盐。盐类也是增高的一大天敌。
+							
+							我的实践：除了不挑食，每天早上冲两个鸡蛋喝，等到消化一个小时后，就开始吃胡萝卜和炒黄豆（胡萝卜要那种嫩小的，黄豆不要陈货），然后同时吃，下午连续吃，每天大约吃3根胡萝卜和100克炒黄豆。晚上临睡觉的时候要喝一杯牛奶。</article>
+						<button class="read-more-btn">阅读更多</button>
+					</div>
+				</div>
+			</section>
+			
+		</div>
+		<footer>
+			<div class="footer-menus">
+				<div class="contact-us">
+					<p class="menu-title">联系我们</p>
+					<p>地址：</p>
+					<p>电话：17388323936</p>
+					<p>传真：13043523832</p>
+					<p>电子邮件：3174512086@qq.com</p>
+				</div>
+				<div class="service-menu footer-menu">
+					<p class="menu-title">服务概览</p>
+					<ul class="menu-items">
+						<li><a href="#">饮食健康</a></li>
+						<li><a href="#">日常锻炼</a></li>
+						<li><a href="#">药物药品</a></li>
+						<li><a href="#">俱乐部合作</a></li>
+					</ul>
+				</div>
+				 <div class="service-menu footer-menu">
+				    <p class="menu-title">成功案例</p>
+				    <ul class="menu-items">
+				        <li><a href="#">饮食减肥</a></li>
+				        <li><a href="#">锻炼养生</a></li>
+				        <li><a href="#">医药代购</a></li>
+				        <li><a href="#">时间金钱</a></li>
+				    </ul>
+				</div>
+				<div class="service-menu footer-menu">
+				    <p class="menu-title">公司动态</p>
+				    <ul class="menu-items">
+				        <li><a href="#">信息公开</a></li>
+				        <li><a href="#">最近新闻</a></li>
+				        <li><a href="#">最新博客</a></li>
+				    </ul>
+				</div>
+				<div class="service-menu footer-menu">
+				    <p class="menu-title">帮助与支持</p>
+				    <ul class="menu-items">
+				        <li><a href="#">帮助中心</a></li>
+				        <li><a href="#">联系客服</a></li>
+				        <li><a href="#">文档资源</a></li>
+				    </ul>
+				</div>
+				<p class="icp-info">川ICP备19026630号-1</p>
+				<p class="rights">
+					&copy; 2020 V享健康 - 健康管理平台官网 版权所有
+				</p>
+				<div class="scrollToTop">
+					<a href="#home"><i class="fas fa-chevron-up"></i></a>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="libs/anime/anime.min.js"></script>
+		<script src="libs/glide/glide.min.js"></script>
+		<script src="libs/isotope/isotope.pkgd.min.js"></script>
+		<script src="libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

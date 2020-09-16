@@ -1,0 +1,124 @@
+<html><head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--css引入方式：
+			1 外联  新建一个css文件
+			2 内联  style标签里面写
+			3 在行内  style=""
+			
+			为了让结构（html）和表现（css）分离 方便维护
+		-->
+		<link rel="stylesheet" type="text/css" href="../css/index.css">
+	</head>
+	<body>
+		<!--搭建网页结构-->
+		<!--头部信息-->
+		<div class="header clearfix">
+			<!--左浮动-->
+			<div class="header-left pull-left" >
+				<!--
+					在a和span里面加上文字目的： 有利于SEO优化
+					SEO 搜索引擎优化
+				-->
+				<a href="http://baidu.com">百度云盘</a>
+				<span>客户端下载</span>
+			</div>
+			<button class="btn-landing"><a href="landing.html">登陆</a></button>
+			<button class="btn-registration"><a href="registration.html">注册</a></button>
+			<!--右浮动-->
+			<div class="header-right pull-right">
+				<a href="" class="first-a">Mac同步版更新说明</a>
+				<span>|</span>
+				<a href="">百度首页</a>
+				<span>|</span>
+				<a href="">百度贴吧</a>
+				<span>|</span>
+				<a href="">版本更新</a>
+			</div>
+		</div>
+		
+		
+		<!--下载平台选择菜单-->
+		<!--总结：
+			
+		 hover应用
+		 nth-of-type
+		 backgroud-positon
+		-->
+		<div class="download-menu">
+			<ul class="tab-menu clearfix">
+				<li><a href="">
+					<span></span>
+				</a></li>
+				<li><a href="">
+					<span></span>
+				</a></li>
+				<li><a href="">
+					<span></span>
+				</a></li>
+				<li><a href="">
+					<span></span>
+				</a></li>
+				<li><a href="">
+					<span></span>
+				</a></li>
+				<li><a href="">
+					<span></span>
+				</a></li>
+			</ul>
+		</div>
+		<!--对应平台的信息-->
+		<!--这个盒子是用来填充背景的-->
+		<div class="download-info">
+			<!--主要是用来居中-->
+			<div class="download-info-content">
+				<div class="download-info-text">
+					<p>大小：11.5M版本：Mac版 V2.2.0</p>
+					<p>适应系统：Mac OS X 10.10+</p>
+					<p>更新时间：2020-03-20</p>
+					<a href=""></a>
+				</div>
+			</div>
+		</div>
+		<!--下载的方式-->
+		<div class="download-method">
+			<div class="download-method-content clearfix">
+				<!--左边部分-->
+				<div class="download-method-left pull-left">
+					<p class="text-title">免费发送短信下载移动客户端</p>
+					<input class="phone" type="text" placeholder="请输入手机号">
+					<input class="check_code" type="text" placeholder="验证码">
+					<img src="../img/genimage.jpeg" alt="">
+					<!--表示一个按钮-->
+					<button class="btn">发送短信</button>
+				</div>
+				<!--右边部分-->
+				<div class="download-method-right pull-left clearfix">
+					<!--在右边部分还要进行左右的浮动-->
+					<div class="code-left pull-left">
+						<p class="code-left-title">扫描二维码下载</p>
+						<p>使用手机上的二维码扫描软件扫描，直接下载百度网盘。</p>
+					</div>
+					<div class="code-right pull-left">
+						<img src="../img/baidu_app_link.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部版权-->
+		<div class="footer">
+			<a href="">©2020 Baidu 移动开放平台</a>
+			<span>|</span>
+			<a href="">服务协议</a>
+			<span>|</span>
+			<a href="">权利声明</a>
+			<span>|</span>
+			<a href="">版本更新</a>
+			<span>|</span>
+			<a href="">帮助中心</a>
+			<span>|</span>
+			<a href="">版权投诉</a>
+		</div>
+	
+
+</body></html>

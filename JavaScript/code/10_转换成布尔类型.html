@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			
+			var str = 'abc';
+			var num = 123;
+			var a= null;
+			var b;  //默认值是undefined
+			
+			console.log(Boolean(str));  //true
+			console.log(Boolean(num));	//true
+			console.log(Boolean(a));	//flase
+			console.log(Boolean(b));	//flase
+			
+			//转换成flase的情况：null undefined ''空字符串 0  NaN
+			console.log(Boolean(''));
+			console.log(Boolean(0));
+			console.log(Boolean(NaN));
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

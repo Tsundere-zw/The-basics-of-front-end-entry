@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>css样式引用</title>
+		<link rel="stylesheet" type="text/css" href="导入样式.css"/>
+		<style>
+			body {
+				background-color: cornflowerblue;
+			}
+			.p0 {
+				font-size: 24px;
+				background-color: #99cc33;
+				height: 100px;
+			}
+			.p1 {
+				color: blue;
+			}
+			.footer {
+				display: grid;
+				grid-template-columns: 300px auto 300px;
+				background-color: #99ff00;
+			}
+			/* .img {
+				height: 200;
+				width: 300px;
+				border: 1px solid red;
+			} */
+			img {
+				height: 200;
+				width: 300px;
+				border: 1px dashed red;
+			}
+			.text {
+				height: 200px;
+				width: 300px;
+				border: 1px solid red;
+			}
+			.content-header {
+				font-size: 14px;
+				color: red;
+			}
+			.content-text {
+				font-size: 14px;
+				color: red;
+				text-indent: 2em;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div style="background-color: #ffff33; height: 100px; font-size: 24px;">这是内嵌样式表应用</div>
+		<div class="p0">这是内部样式表应用
+		<div class="p1">这是内部样式表p1</div>
+		</div>
+		<div class="Import">这是导入样式表应用</div>
+		<div class="footer">
+			<div class="img">
+			<img src="image/image1.jpg" >
+			</div>
+			<div>
+				
+			</div>
+			<div class="text">
+				<div class="content">
+					<p class="content-header">赞美鲜花</p>
+					<p class="content-text">爱美之心人皆有之，尤其花卉是多数人的钟爱，从文人墨客到普遍百姓，不喜欢花卉的人少之又少。自古至今咏梅、赏菊、诵荷
+					的诗词书画不胜枚举，其名家的作品更是家喻户晓耳熟能详。唯独鲜花，这种以产业化方式进入人们生活的花卉，却少有人赞值。
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

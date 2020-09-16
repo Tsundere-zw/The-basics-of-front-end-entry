@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head >
+		<meta charset="UTF-8">
+		<title></title>
+	
+		<style type="text/css">
+        body {
+            font-family: "Helvetica","Arial",serif;
+            color: #333;
+            background-color: #ccc;
+            margin: 1em 10%;
+        }
+        h1 {
+            color: #333;
+            background-color: transparent;
+        }
+        a {
+            color: #c60;
+            background-color: transparent;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        /* ul {
+            padding: 0;
+        }
+        li {
+            float: left;
+            padding: 1em;
+            list-style: none;
+        } */
+        #imagegallery {
+        }
+
+        #imagegallery a {
+            margin: 0px 20px 20px 0px;
+            padding: 0px;
+            display: inline;
+        }
+
+        #imagegallery a img {
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+<h2>
+    美女画廊
+</h2>
+
+<div id="imagegallery">
+    <a href="1.jpg" title="美女A">
+        <img src="./1-small.jpg" width="100px" alt="美女1">
+    </a>
+    <a href="2.jpg" title="美女B">
+        <img src="./2-small.jpg" width="100px" alt="美女2">
+    </a>
+    <a href="3.jpg" title="美女C">
+        <img src="./3-small.jpg" width="100px" alt="美女3">
+    </a>
+    <a href="4.jpg" title="美女D">
+        <img src="./4-small.jpg" width="100px" alt="美女4">
+    </a>
+</div>
+
+<!-- <div style="clear:both"></div> -->
+
+<img id="image" src="./placeholder.png" alt="" width="450px">
+
+<p id="des">选择一个图片</p>
+    <script>
+        // 1.获取到所有的a标签
+		var imagegallery = document.getElementById('imagegallery');
+		var links = imagegallery.getElementsByTagName('a');
+		// 2.给所有的a标签注册事件
+		for (var i = 0; i < links.length; i++) {
+			// 所有的a标签对应的元素
+			var link = links[i];
+			link.onclick = function() {
+				// 4.切换图片
+				// 获取站位的大的img标签
+				var image = document.getElementById('image');
+				// 把img标签的属性  设置为当前点击的a标签的href
+				image.src = this.href;   // this表示当前点击图片的放大
+				// 5.设置p标签的内容
+				
+				var des = document.getElementById('des');
+				// 当前点击a标签的title属性
+				// this.title
+				// 如何设置p标签中显示的内容
+				// console.dir(des);    // 打印对象
+				des.innerText = this.title;
+				// 3.取消a的默认行为
+				return false;	
+			}
+		}
+		
+		
+
+        // 当循环结束之后 link是谁？？
+        // link 是最后一个a标签
+        // console.log(link);
+        
+        
+    </script>
+
+
+</body></html>

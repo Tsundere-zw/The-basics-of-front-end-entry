@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="button" id="btn" value="获取文本框的值" />
+		<script type="text/javascript">
+			// 1.当页面加载完毕，给所有文本框赋值
+			var inputs = document.getElementsByTagName('input');
+			for (var i = 0; i < inputs.length; i++) {
+				var input = inputs[i];
+				// 根据type判断是否是文本框
+				if (input.type === 'text') {
+					input.value = i;
+				}
+			}
+			
+			// 2.当点击按钮的时候，获取所有文本框的值，并使用 | 分割输出
+		    var btn = document.getElementById('btn');
+			btn.onclick = function() {
+				var array = [];
+				for (var i = 0; i < inputs.length; i++) {
+					var input = inputs[i];
+					// 判断是否是文本框
+					if (input.type === 'text') {
+						array.push(input.value);
+					}
+				}
+				console.log(array.join('|'));
+			}
+			
+		</script>
+	</body>
+</html>

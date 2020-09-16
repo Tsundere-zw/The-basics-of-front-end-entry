@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>大学生暑假社会实践调查问卷</title>
+		<style>
+			body {
+				background-color: #00cccc;
+			}
+			.main {
+				background-color: #c5e4fe;
+				width: 1000px;
+				border: 2px solid white;
+				box-shadow: 10px 5px 5px white;
+				margin: 20px;
+				margin: 0 auto ;
+			}
+			.bor {
+				border-top: 1px solid whitesmoke;
+			}
+			.header {
+				text-align: center;
+				font-size: 34px;
+				border-bottom: 1px solid whitesmoke;
+				color: #6757ff;
+			}
+			.introduction {
+				color: blue;
+				font-size: 18px;
+			}
+			.content {
+				text-indent: 2em;
+				font-size: 18px;
+				color: #6691fe;
+			}
+			.layout {
+				display: grid;
+				grid-template-rows: 1fr;
+				row-gap: 10px;
+			}
+			.title {
+				color: #3300cc;
+				font-weight: bold;
+			}
+			.btn {
+				text-align: center;
+			}
+			.btn1 {
+				margin-right: 50px;
+			}
+			.footer {
+				text-align: center;
+				color: #697bff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="header bor">大学生暑假社会实践调查问卷</div>
+			<div class="introduction">您好！</br>
+			<div class="content">为了更好的了解人们对进年来计算机类专业填报火热现象的看法，特制定本问卷，希望得到您的配合，请认真阅读并回答一下问题，您的回答将直接影响本调查的可信度和有效性，真诚感谢您的支持，祝您天天愉快，谢谢！</div>
+			</div>
+			<div class="sex bor layout">
+				<div class="title">1. &nbsp;您的性别:</div>
+				<div class="sexSelect">
+					<input type="radio" name="sex">男</br>
+					<input type="radio" name="sex">女
+				</div>
+			</div>
+			<div class="school bor layout">
+				<div class="title">2.&nbsp;您的学校:</div>
+				<div class="text">
+					<input type="text">
+				</div>
+			</div>
+			<div class="grade bor layout">
+				<div class="title">3.&nbsp;您的年级:</div>
+				<div class="gradeSelect">
+					<input type="radio" name="grade">大一</br>
+					<input type="radio" name="grade">大二</br>
+					<input type="radio" name="grade">大三</br>
+					<input type="radio" name="grade">大四</br>
+					<input type="radio" name="grade">专科
+				</div>
+			</div>
+			<div class="reason bor layout">
+				<div class="title">4.&nbsp;报考该专业的原因:</div>
+				<div class="reaseonSelect">
+					<input type="checkbox" name="grade">自己感兴趣</br>
+					<input type="checkbox" name="grade">对将来发展有利</br>
+					<input type="checkbox" name="grade">适应社会</br>
+					<input type="checkbox" name="grade">父母主张</br>
+					<input type="checkbox" name="grade">老师建议</br>
+					<input type="checkbox" name="grade">被学校调配</br>
+					<input type="checkbox" name="grade">其他</br>
+				</div>
+			</div>
+			<div class="suggestion bor layout">
+				<div class="title">5.&nbsp;您对该专业的建议:</div>
+				<div class="suggestionSelect">
+					<input type="checkbox" name="suggestion">招收时重质不重量</br>
+					<input type="checkbox" name="suggestion">师资力量要改进</br>
+					<input type="checkbox" name="suggestion">要适应社会需要</br>
+					<input type="checkbox" name="suggestion">加强专业实验室建设</br>
+					<input type="checkbox" name="suggestion">其他</br>
+				</div>
+			</div>
+			<div class="practice bor layout">
+				<div class="title">6.&nbsp;你认为该专业学生有必要参加社会实践:</div>
+				<div class="practiceSelection">
+					<input type="radio" name="practice">有必要</br>
+					<input type="radio" name="practice">没有必要</br>
+					<input type="radio" name="practice">无所谓
+				</div>
+			</div>
+			<div class="argee bor layout">
+				<div class="title">7.&nbsp;您的父母是否赞成您读该专业:</div>
+				<div class="argeeSelect">
+					<input type="radio" name="argee">很赞成，希望如此</br>
+					<input type="radio" name="argee">一般，不是很高兴</br>
+					<input type="radio" name="argee">不了解</br>
+				</div>
+			</div>
+			<div class="schoolSuggest bor layout">
+				<div class="title">8.&nbsp;您对学校的建议:</div>
+			<div><textarea rows="10" cols="90">请您提出宝贵的建议:
+				
+			</textarea></div>
+			</div>
+			<div class="btn bor">
+				<button class="btn1">提交答案</button><button>清空</button>
+			</div>
+			<div class="footer bor">版权所有：计算机科学与技术系软件工作教研室copy right@2012-2015</div>
+		</div>
+	</body>
+</html>

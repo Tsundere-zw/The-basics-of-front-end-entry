@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			var divs = document.getElementsByTagName('div');
+			console.log(divs.length);
+		</script>
+	</head>
+	<body>
+		<div>hello</div>
+		<div id="main">word</div>
+		<div>heima</div>
+		<p>heihie</p>
+		<!-- <span>111</span> -->
+
+
+
+		<script>
+			console.log(divs.length);
+			// HTMLCollection 集合  伪数组
+			var divs = document.getElementsByTagName('div');
+			console.log(divs);
+			for (var i = 0; i < divs.length; i++) {
+				console.log(divs[i]);
+				// divs 中每一个元素是什么类型？
+				// divs 中的每一个元素都是对象 都是 HTMLDivElement
+				
+			}
+			
+			
+			// 注意： getElementsByTagName() 获取到的集合是动态集合
+			// getElementsByTagName()
+				// var spans = document.getElementsByTagName('span');
+				// console.log(spans);
+		</script>
+
+	</body>
+</html>

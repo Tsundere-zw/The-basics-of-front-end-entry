@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="按钮" id="btn">
+		<script type="text/javascript">
+			// 动态创建元素
+			// document.write()
+			// element.innerHtml()
+			// document.createElement()
+			var btn = document.getElementById('btn');
+			btn.onclick = function() {
+				// 当点击按钮的时候使用document.write()输出内容 会把之前的整个页面覆盖掉
+				document.write('hello <p>world</p>');
+			}
+			
+		</script>
+	</body>
+</html>

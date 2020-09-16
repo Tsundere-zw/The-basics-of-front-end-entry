@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>相册</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				background-color: #ddd;
+				perspective: 1000px;
+			}
+			.main {
+				position: relative;
+				width: 200px;
+				height: 124px;
+				background-color: #30ebbc;
+				margin: 150px auto;
+				font-size: 0;
+				transform: rotateX(30deg);
+			}
+			.main:hover {
+				transform: rotateX(15deg);
+			}
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				border: 5px solid #fff;
+				transition: 0.3s;
+			}
+			.main:hover img {
+				transform: scale(1.2);
+			}
+			img:nth-child(1) {
+				transform: translateY(-140px) translate(-216px) scale(1.2);
+			}
+			img:nth-child(2) {
+				transform: translateY(-140px)  scale(1.2);
+			}
+			img:nth-child(3) {
+				transform: translateY(-140px) translate(216px) scale(1.2);
+			}
+			img:nth-child(4) {
+				transform: translateY(15px) translate(-225px) scale(1.2);
+			}
+			img:nth-child(5) {
+				transform: translateY(15px) translate(216px) scale(1.2);
+			}
+			img:nth-child(6) {
+				transform: translateY(145px) translate(-216px) scale(1.2);
+			}
+			img:nth-child(7) {
+				transform: translateY(145px)  scale(1.2);
+			}
+			img:nth-child(8) {
+				transform: translateY(145px) translate(250px) scale(1.2);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<img src="./images/1-small.jpg" >
+			<img src="./images/2-small.jpg" >
+			<img src="./images/3-small.jpg" >
+			<img src="./images/4-small.jpg" >
+			<img src="./images/1-small.jpg" >
+			<img src="./images/1-small.jpg" >
+			<img src="./images/2-small.jpg" >
+			<img src="./images/3-small.jpg" >
+			<img src="./images/4-small.jpg" >
+			<img src="./images/1-small.jpg" >
+			<img src="./images/4-small.jpg" >
+			<img src="./images/1-small.jpg" >
+		</div>
+	</body>
+</html>

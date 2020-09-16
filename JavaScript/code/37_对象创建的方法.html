@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			// 1.对象字面量
+			// var hero = {
+			// 	name: '盲仔',
+			// 	wepon: '双拳',
+			// 	blood: '摸眼',
+			// 	attack: function() {
+			// 		console.log(this.name + '使出了天音波');
+			// 		console.log(this.name + '使出了回旋踢');
+			// 	},
+			// 	run: function() {
+			// 		console.log(this.name + '中了男枪的烟雾弹被减速了');
+			// 		console.log(this.name + '受到了露露的加速效果');
+			// 	}
+			// }
+			// console.log(hero.name, hero.wepon, hero.blood);
+			// hero.attack();
+			// hero.run();
+
+
+			// 2.new Object
+			// Object 是一个构造函数
+			// new 的方式来调用构造函数
+			// new Object()调用构造函数  会在内存中创造一个对象
+			// var hero = new Object();  // 创建了一个空的对象
+			// // 打印一个不存在的属性 输出 undefined
+			// // console.log(hero.name);
+			// // 属性
+			// hero.name = '黄忠';
+			// hero.weapon = '弓箭';
+			// hero.blood = 100;
+
+			// // 方法
+			// hero.attack = function () {
+			// 	console.log(this.name + ':射箭');
+			// }
+
+			// hero.attack();	
+
+			// 3.工厂方法 
+			// function createHero(name, weapon, equipment, blood) {
+			// 	var hero = new Object(); // 返回一个空的对象
+			// 	// 属性
+			// 	hero.name = name;
+			// 	hero.wepon = weapon;
+			// 	hero.equipment = equipment;
+			// 	hero.blood = blood;
+			// 	// 方法
+			// 	hero.attack = function() {
+			// 		console.log(this.name + '攻击');
+			// 	}
+			// 	hero.run = function() {
+			// 		console.log(this.name + '跑');
+			// 	}
+			// 	return hero;
+			// }
+
+			// var hero1 = createHero('黄忠', '弓箭', ['头盔', '靴子'], 100);
+			// var hero2 = createHero('刘备', '剑', ['头盔', '盔甲'], 100);
+			// console.log(createHero(hero1));
+
+			// 4.自定义构造函数
+			// new Object();
+			// new Hero();
+			// 帕斯卡命名   第一个单词字母大写   后续的每一个字母小写
+			// 自定义构造函数
+			function hero(name, weapon, equipment, blood) {
+				// this 动态的给对象增加成员
+				// this 指向当前对象
+				hero.name = name;
+				hero.wepon = weapon;
+				hero.equipment = equipment;
+				hero.blood = blood;
+				hero.attack = function() {
+					console.log(this.name + '攻击');
+				}
+				hero.run = function() {
+					console.log(this.name + '跑');
+				}
+			}
+			var hero1 = new hero('黄忠', '弓箭', ['头盔', '靴子'], 100);
+			var hero2 = new hero('刘备', '剑', ['头盔', '盔甲'], 100);	
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

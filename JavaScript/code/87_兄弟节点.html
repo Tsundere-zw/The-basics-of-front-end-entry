@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box">
+			<div>这是一个区域1</div>
+			<div>这是一个区域2</div>
+			<div id="c3">这是一个区域3</div>
+			<div>这是一个区域4</div>
+			<div>这是一个区域5</div>
+		</div>
+		<script type="text/javascript">
+			var c3 = document.getElementById('c3');
+			
+			// nextSibling  下一个兄弟节点
+			// nextElementSibling  下一个兄弟元素
+			
+			// previousSibling   上一个兄弟节点
+			// previousElementSibling  上一个兄弟元素
+			// console.log(c3.nextSibling);
+			// console.log(c3.previousSibling);
+			
+			console.log(c3.nextElementSibling);
+			console.log(c3.previousElementSibling);
+			
+		</script>
+	</body>
+</html>

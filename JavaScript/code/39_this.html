@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			// this在以下位置，分别代表什么
+			// 1.函数中  --  this 指向window
+			// 2.方法中 --  this 指向的是这个方法所属的对象
+			// 3.构造函数中  -- this 就是构造函数创建的对象
+			
+			// 函数
+			// function fn() {
+			// 	console.log(this);
+			// }
+			// fn();
+			
+			// 方法
+			// var obj = {
+			// 	name: 'zs',
+			// 	fn: function() {
+			// 		console.log(this);
+			// 	}
+			// };
+			// obj.fn();
+			
+			// 构造函数
+			function Fn() {
+				this.name = 'zs';
+				this.age = 18;
+				console.log(this);
+			}
+			var o = new Fn();  // 调用构造函数
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

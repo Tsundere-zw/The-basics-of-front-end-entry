@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				height: 50px;
+				width: 300px;
+				background-color: green;
+				margin-bottom: 5px;
+				/* 被转换成了行内元素 */
+				display: inline;
+				/* 设置是否显示 值为none表示不显示 */
+				display: none;
+			}
+			span{
+				width: 300px;
+				height: 50px;
+				/* 转换为块级元素支持宽高 虽然可以支持宽高 但是独占一行 */
+				/* display: block; */
+				/* 转换成块级元素， 可以支持宽高 同时在一行内显示 */
+				display: inline-block;
+				margin-bottom: 5px;
+				background-color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div>萨达所大所撒</div>
+		<div><打/div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<span>首页</span>
+		<span>课程</span>
+		<span>实战</span>
+		<i>ddd</i>
+	</body>
+</html>

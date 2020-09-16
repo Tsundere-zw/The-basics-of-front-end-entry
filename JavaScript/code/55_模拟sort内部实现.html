@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function sort(numbers, fnCompare) {
+			for (var i = 0; i < numbers.length - 1; i++) {
+							// 内层循环: 控制比较的次数，并且判断两个数的大小，大的往后移，小的往前移
+							for (var j = 0; j < numbers.length - 1 - i; j++) {
+								// 两两比较 从小到大排序
+								
+								if (fnCompare(numbers[j], numbers[j + 1]) > 0) {
+									isSort = false;
+									// 交换位置
+									var tmp = numbers[j];
+									numbers[j] = numbers[j + 1];
+									numbers[j + 1] = tmp;
+								}
+							}
+							// 判断是否排好
+							if (isSort) {
+								break;
+							}
+						}
+					}	
+						
+						
+						var arr = [56, 10, 1, 17];
+						sort(arr);
+						console.log(arr);
+						
+						sort(arr, fnCompare (a, b) {
+							return a - b;
+						});
+						console.log(arr);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="按钮" id="btn">
+		<script type="text/javascript">
+			var btn = document.getElementById('btn');
+			
+			// 第一个参数 事件的名称前要加on
+			btn.attachEvent('onclick', function() {
+				alert('hello world')
+			
+				});
+				btn.attachEvent('onclick', function() {
+					alert('hello item')
+				
+					});
+		</script>
+		
+	</body>
+</html>

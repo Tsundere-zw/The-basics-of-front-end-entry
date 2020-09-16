@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>留言板</title>
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+			.main {
+				background-color: aliceblue;
+			}
+			.header{
+				border-bottom: 2px solid white;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+			}
+			.head {
+				color: blue;
+				font-weight: bold;
+				padding: 4px 0;
+			}
+			.header-left {
+				font-size: 24px;
+			}
+			.header-right {
+				justify-self: end;
+				margin-right: 30px;
+				font-size: 18px;
+			}
+			.middle {
+				border: 2px solid white;
+				width: 650px;
+			}
+			.middle > * {
+				text-indent: 2em;
+				border-bottom: 2px solid white;
+				width: 650px;
+			}
+			.middle-header {
+				font-weight: bold;
+				color: red;
+				letter-spacing: 6px;
+			}
+			.attention {
+				color: blue;
+			}
+			span {
+				font-weight: bold;
+				color: red;
+			}
+			.content {
+				color: darkgreen;
+			}
+			select {
+				width: 60px;
+			}
+			.middle-fiveth {
+				font-size: 18px;
+			}
+			.middle-fourth {
+				display: grid;
+				grid-template-columns: 1fr 3fr;
+			}
+			.words {
+				padding-top: 60px;
+				color: darkgreen;
+			}
+			.text {
+				margin-right: 174px;
+			}
+			.btn {
+				text-align: center;
+			}
+			.btn1 {
+				margin-right: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="header">
+				<div class="header-left head">留言板</div>
+				<div class="header-right head">科技工作者建言</div>
+			</div>
+			<div class="middle">
+				<div class="middle-header">发表留言</div>
+				<div class="middle-first">
+					<p class="content">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></p>
+				</div>
+				<div class="middle-second">
+					<p class="content">电子邮件:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"></p>
+				</div>
+				<div class="middle-third">
+					<p class="content">分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类:&nbsp;&nbsp;&nbsp;&nbsp;<span>科技工作者建言&nbsp;&nbsp;<input type="radio" name="secret"> 不保密 <input type="radio" name="secret">保密&nbsp;&nbsp;&nbsp;<select name="" id=""></select></span></p>
+				</div>
+				<div class="middle-fourth">
+					<div class="words">留言</div>
+					<div class="text">
+						<textarea style="overflow-x:hidden" name="" id="" cols="40" rows="10"></textarea>
+					</div>
+				</div>
+				<div class="middle-fiveth">
+					<p class="attention">注：如果您的留言不便公开，请选择“保密”选项，提交后可凭系统反馈给您的留言编号，查询密码和您的姓名查询回复。</p>
+				</div>
+				<div class="middle-end">
+					<div class="btn"><button class="btn1" type="button">提交</button><button type="button">清空</button></div>
+				</div>
+			</div>
+			<div class="footer">
+				<li>请遵守国家有关法律、法规、尊重网上道德，承担一切因你的行为而直接或间接引起的法律责任。</li>
+				<li>本网站拥有管理笔名和留言的一切权利</li>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+body {
+	 margin: 0;
+	  padding: 0;
+	  min-height: 100vh;
+	  background: #333;
+	  display: display; /* 弹性盒模型 */
+	  align-items: center; /* 交叉轴对齐方式 */
+	  justify-content: center; /* 主轴对齐方式 */
+}
+.glide__slide img{
+  width: 100%;
+}
+.glide__slide{
+  filter: blur(6px); /* 模糊 */
+  opacity: .7;
+  transition: .3s linear;
+}
+.glide__slide--active{
+  opacity: 1; /* 透明度 */
+  filter: none; /* 无过渡 */
+  transform: scale(1.1); /* 放大 */
+}
+.glide__slides{
+  overflow: visible; /*内容不会被修剪，会出现在元素框外。 */
+}

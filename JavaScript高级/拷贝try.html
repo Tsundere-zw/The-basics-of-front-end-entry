@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var a = {
+				a: 'old',
+				b: {
+					c: 'old'
+				}
+			}
+			var b = Object.assign({}, a)
+			b.a = 'new'
+			b.b.c = 'new'
+			console.log(a) // { a: 'old', b: { c: 'new' } }
+			console.log(b) // { a: 'new', b: { c: 'new' } }
+			
+			
+			// var obj1 = {
+			// 	name: 'zs',
+			// 	age :18,
+			// 	action: {
+			// 		a: '说话'
+			// 	}
+			// }
+			// var obj2 = Object.assign({}, obj1);
+			// obj2.name = 'ls';
+			// obj2.action.a = '跑步';
+			// // 浅拷贝 拷贝的源对象的属性值是一个对象时，拷贝的只是对象的引用值，
+			// //        因此当修改属性值的时候两个对象的属性值都会发生更新
+			// console.dir(obj1);
+			// console.dir(obj2);
+			
+			
+			var arr = ['a', 'b', 
+			{d: 'old'}]
+			var arr1 = arr.slice(1)
+			// slice() 方法返回一个新的数组对象，
+			// 这一对象是一个由 begin 和 end 决定的原数组的浅拷贝（包括 begin，不包括end）。原始数组不会被改变。
+			console.log(arr1);
+			arr1[1].d = 'new';
+			console.log(arr[2].d) // new
+			
+			var arr3 = ['zs', 18, '打篮球', '唱歌'];
+			function deepCopy(arr1, arr2) {	
+				for(var key in arr1) {
+					var item = arr1[key];
+					console.log(item);
+					if (item instanceof Array) {
+						arr2[key] = [];
+						deepCopy(item, arr2[key]);
+					} else {
+						arr2[key] = arr1[key];
+					}
+			}
+		}
+		var arr4= [];
+		deepCopy(arr3, arr4);
+		arr4[1] = 19;
+		console.log(arr4);
+		console.log(arr3)
+		
+		
+		// 获取对象的所有属性
+		// var student = {
+		// 	name: 'zs',
+		// 	age: 18,
+		// 	number: 1805200110,
+		// 	say: function() {
+		// 		console.log(this.name + '说老师好');
+		// 	}
+		// }
+		// for (var key in student) {
+		// 	// var item = student[key];
+		// 	console.log(key);	
+		// }
+		</script>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			// function random(min, max) {
+			//   return parseInt(Math.random() * (max - min) + min); 
+			// }
+			// function randomRGB(min, max) {
+			// 	var color1 = random(min, max);
+			// 	var color2 = random(min, max);
+			// 	var color3 = random(min, max);
+			//     return 'rgb('+ color1 + ',' + color2 +',' + color3 +')';
+			// }
+			// console.log(randomRGB(0,255));
+
+			// 模拟实现max()/min()
+
+			// function max() {
+			// 	// arguments
+			// 	var max = arguments[0];
+			// 	for (var i = 1; i < arguments.length; i++) {
+			// 		if (max < arguments[i]) {
+			// 			max = arguments[i];
+			// 		}
+			// 	}
+			// 	return max;
+			// }
+			// console.log(max(5, 1, 100, 23));
+
+
+			// function min() {
+			// 	// arguments
+			// 	var min = arguments[0];
+			// 	for (var i = 1; i < arguments.length; i++) {
+			// 		if (min > arguments[i]) {
+			// 			min = arguments[i];
+			// 		}
+			// 	}
+			// 	return min;
+			// }
+			// console.log(min(12,15));
+
+			var MyMath = {
+				min: function() {
+					var min = arguments[0];
+					for (var i = 1; i < arguments.length; i++) {
+						if (min > arguments[i]) {
+							min = arguments[i];
+						}
+					}
+					return min;
+				},
+
+				max: function() {
+					var max = arguments[0];
+					for (var i = 1; i < arguments.length; i++) {
+						if (max < arguments[i]) {
+							max = arguments[i];
+						}
+					}
+					return max;
+				}
+			};
+			console.log(MyMath.max(10, 1, 2, 4, 5));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

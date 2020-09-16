@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>css实现简单的导航栏下拉</title>
+	</head>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		/* 先重置一下html，消除HTML标签默认的内外边距 */
+		.wrap {
+			width: 1000px;
+			margin: 0 auto;
+		}
+
+		/* 对导航的内容设置一个主体为800px的宽并使其居中 */
+		.clear {
+			clear: both;
+		}
+
+		/* 清除浮动 */
+		a {
+			text-decoration-line: none;
+		}
+
+		/* 去掉默认a标签的下划线 */
+		ul,
+		li {
+			list-style: none;
+		}
+
+		nav .level>li {
+			float: left;
+			width: 16.66%;
+			text-align: center;
+			background: bisque;
+			padding: 10px 0;
+			font-size: 16px;
+			transition: .4s;
+		}
+
+		nav .level>li a {
+			color: black;
+		}
+
+		nav .level>li:hover {
+			background: red;
+		}
+
+		/* 设置鼠标滑过后的样式 */
+
+		nav .two {
+			display: none;
+			margin-top: 10px;
+		}
+
+		/* 先使二级菜单的内容隐藏 */
+		nav .level>li:hover .two {
+			display: block;
+		}
+
+		/* 鼠标滑过一级菜单后的显示二级菜单 */
+		nav .two li {
+			padding: 5px 0;
+			transition: .4s;
+			cursor: pointer;
+		}
+
+		nav .two li:hover {
+			background: pink;
+		}
+	</style>
+	<body>
+		<nav>
+			<div class="wrap">
+				<ul class="level">
+					<li>
+						<a href="">了解锦江</a>
+						<ul class="two">
+							<li>学校历程</li>
+							<li>影像锦江</li>
+							<li>锦江人</li>
+							<li>锦江制度</li>
+							<li>锦江特色</li>
+							<li>学校荣誉</li>
+							<li>锦江画册</li>
+							<li>学校地图</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">教学科研</a>
+						<ul class="two">
+							<li>科研管理</li>
+							<li>学术论坛</li>
+							<li>实验教学</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">招生就业</a>
+						<ul class="two">
+							<li>就业信息网</li>
+							<li>考研</li>
+							<li>留学深造</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">文化资源</a>
+						<ul class="two">
+							<li>图书馆</li>
+							<li>实验室</li>
+							<li>展览馆</li>
+							<li>艺术楼</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">师资队伍</a>
+						<ul class="two">
+							<li>师资队伍</li>
+							<li>教授队伍</li>
+							<li>各类杰出人才</li>
+						</ul>
+					</li>
+					<li>
+						<a href="">其他服务</a>
+						<ul class="two">
+							<li>后勤服务</li>
+							<li>教学服务</li>
+							<li>网络服务</li>
+							<li>管理服务</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="跳转" id="btn">
+		<script type="text/javascript">
+			var btn = document.getElementById('btn');
+			btn.onclick = function() {
+				// console.log(location.href);
+				
+				// location.href = 'http://www.baidu.com';
+				
+				// assign 委派
+				// assign() 的作用和href的作用一样 可以让页面跳转到指定的地方
+				// location.assign('http://www.baidu.com');
+				
+				// replace  替换
+				// 替换掉地址栏中的地址 但是不记录历史
+				// location.replace('http://www.baidu.com');
+				
+				// 重新加载 refresh f5
+				// 参数 true 强制从服务器获取界面 
+				 //    flase 如果浏览器有缓存的话 直接从缓存获取界面
+				location.reload(true);
+				
+				// f5 刷新页面  可能从缓存中加载 control+f5 强制刷新 从服务器获取页面
+			}
+		</script>
+	</body>
+</html>

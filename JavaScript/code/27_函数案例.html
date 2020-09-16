@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			// // 写一个函数，  计算两个数的和
+			// function getSum(a, b) {
+			// 	a = 100, b = 100;
+			// 	console.log(a + b);
+			// }
+			
+			// // getSum(10, 12);
+			// var x = 1, y = 2;
+			// getSum(x, y);
+			
+			// // 如果在函数内部修改形参的值，是否会影响函数外部的实参的值？
+			// // 当在函数内部修改形参的值，不会影响外部实参的值
+			// // 是因为调用函数的时候，是把实参的值复制给了一份赋给形参的
+			// console.log(x, y);
+			
+			// - 圆的面积 = π * r * r;
+			// function getArea(r) {
+			// 	var π = 3.1415926;
+			// 	console.log(π * r * r);
+			// }
+			// getArea(7);
+			
+			// - 求2个数中的最大值
+			// function getMax(a, b) {
+			// 	if (a > b){
+			// 		console.log(a);
+			// 	} else {
+			// 		console.log(b);
+			// 	}
+			// }
+			// var x = 100;
+			// var y = 1000;
+			// getMax(x, y);
+			
+			// - 求n个数中的最大值
+			// function getMax(arr) {
+			// 	// 参数arr  是数组
+			// 	var max = arr[0];
+			// 	for (var i = 1; i < arr.length; i++) {
+			// 		// 判断max和数组中每一个元素进行比较
+			// 		if (max < arr[i]) {
+			// 			max = arr[i];
+			// 		}
+			// 	}
+			// 	console.log(max);
+			// }
+			// var array = [12, 2, 45, 1, 10];
+			// getMax(array);
+			
+			
+			// - 判断一个数是否是素数  -- 质数
+			function jdugePrimeNumber(number) {
+				// 假设number是质数
+				var isPrime = true;
+				for (var i = 2; i < number; i++) {
+					// 判断是否有能被number整除的数
+					if (number % i === 0) {
+						// 如果此处执行了  说明不是质数
+						isPrime = false;
+						break;
+					}
+				}
+				if (isPrime) {
+					console.log('质数');
+				} else {
+					console.log('不是质数');
+				}
+			}
+			jdugePrimeNumber(9);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

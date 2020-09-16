@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				/* 把这里的宽度减30px  300-30 */
+				width: 280px;
+				height: 200px;
+				background-color: green;
+				/* padding固定 */
+				padding-left:10px ;
+				padding-right: 10px;
+				/* 固定 */
+				border: 5px solid red;
+				/* 浮动 */
+				float: left;
+			}
+			
+			.lnner{
+				width: 150px;
+				height: 100px;
+				background-color: blue;
+			}
+			.box2{
+				width: 500px;
+				height: 300px;
+				background-color: gray;
+				/* 浮动 */
+				float: left;
+				/* 总结：padding会把盒子整体撑大，padding撑大多少 width 或者height 就要减多少 */
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 外层的盒子box固定是300px 如果大于300px就会影响其他内容的布局 -->
+		<div class="box">
+			<!-- 如果加上左右padding20px   box盒子的总宽度就等于 300+20+10px  330px -->
+			<div class="lnner">
+				
+			</div>
+			<div class="box2">
+				
+			</div>
+		</div>
+	</body>
+</html>

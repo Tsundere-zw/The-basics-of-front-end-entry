@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var box = document.getElementById('box');
+			console.log(box.innerText);  // 获取内部文本
+			console.log(box.textContent); // 获取内部文本
+			
+			// 谷歌 两个都支持
+			// 新版的火狐 两个都支持
+			// 旧版的火狐 只支持textContent
+			// IE9  两个都支持
+			// IE9以下 只支持innerText
+		</script>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.header div {
+				text-align: center;
+				font-size: 45px;
+			}
+			.middle {
+				text-align: center;
+				font-size: 18px;
+				color: #0000FF;
+			}
+			.ending {
+			height: 300px;
+			background-color: greenyellow;
+			position: relative;
+			}
+			#vedio1,#vedio2,#vedio3 {
+				position: absolute;
+			}
+			#vedio1,#vedio3 {
+				top: 20px;
+			}
+			#vedio1 {
+				left: 20px;
+			}
+			#vedio2 {	
+				right: 700px;
+			}
+			#vedio3 {
+				right: 20px;
+			}
+			#footer {
+				background-color: blue;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div>明月几时有</div>
+			<hr color="#0000FF">
+		</div>
+		<div class="middle">
+			<p>明月几时有？把酒问青天。</p>
+			<p>不知天上宫阙，今夕是何年。</p>
+			<p>我欲乘风归去，又恐琼楼玉宇，</p>
+			<p>高处不胜寒，起舞弄清影，何似在人间。</p>
+			<p>转朱阁，低绮户，照无眠。</p>
+			<p>不应有恨，何事长向别时圆。</p>
+			<p>人有悲欢离合，月有阴晴圆缺，此事古难全。</p>
+			<p>但愿人长久，千里共婵娟。</p>
+			<hr color="red">
+		</div>
+		<div class="ending">
+			<video id="vedio1" controls autoplay width="200" height="200" >		
+				<embed  src="media/62.swf">
+			</video>
+			
+			<video id="vedio2" controls="controls" width="200" height="250">
+				<source src="media/music.mp3" type="audio/mp3">
+			</video>
+			
+			<video id="vedio3" controls="controls" width="300" height="250">
+				<source src="media/0303.swf" type="audio/0303.swf">
+			</video>
+		</div>
+		<div id="footer">欢迎来到我的多媒体世界</div>
+		
+	</body>
+</html>

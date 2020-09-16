@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		#box1 {
+			width: 500px;
+			height: 500px;
+			background-color: #0099CC;
+		}
+		#box2 {
+			width: 250px;
+			height: 250px;
+			background-color: #808080;
+		}
+		#box3 {
+			width: 125px;
+			height: 125px;
+			background-color: red;
+		}
+	</style>
+	<body>
+		<input type="button" value="按钮" id="btn">
+		<div id="box1">
+			<div id="box2">
+				<div id="box3">
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			// 通过事件对象，可以获取到事件发生的时候和事件相关的一些数据
+			
+			var box1 = document.getElementById('box1');
+			var box2 = document.getElementById('box2');
+			var box3 = document.getElementById('box3');
+			var array = [box1, box2, box3];
+			for (var i = 0; i < array.length; i++) {
+				var box = array[i];
+				box.onclick = function(e) {
+					e = e || window.event;
+					// 事件的阶段
+					console.log(e.eventPhase);
+					// e.target 获取真正触发事件的对象
+					var target = e.target || e.srcElement;
+					console.log(e.target);
+					// e.currentTarget  和this一样 获取事件处理函数所属的对象
+					console.log(e.currentTarget);
+					console.log(this);
+				}
+			}
+			
+			
+			
+			
+			// var btn = document.getElementById('btn');
+			// btn.onclick = function (e) {
+				// DOM标准中，是给事件处理函数一个参数
+				// e就是事件对象
+				// 在老版本的IE中获取事件对象的方式  window.event
+				// 当e是undefined的时候 或运算会转换成布尔类型
+				// 当返回false：就会返回window.event
+				// 当返回true：就会返回e对象本身
+				// 处理事件对象的浏览器兼容性
+				// e = e || window.event;
+				
+				// 事件阶段：1 捕获阶段 2 目标阶段--点击元素在执行的时候 3 冒泡阶段  了解就行
+				// console.log(e.eventPhase);
+				
+				// e.target 获取真正触发事件的对象 浏览器兼容性问题
+				// 老版本的IE中 SRCElement
+				// 处理兼容性问题
+				// var target = e.target || e.srcElement;
+				// console.log(e.target);
+				
+				// e.currentTarget  事件处理函数所属的对象this 例如点击li的对象为ul
+				// console.log(e.currentTarget);
+			// }
+		</script>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			canvas {
+				
+				border: 1px solid #0000FF;
+				/* margin: 10px auto; */
+				
+			}
+		</style>
+	</head>
+	<body>
+		
+		<canvas id="canvas" width="600" height="400"></canvas>
+		<script type="text/javascript">
+			var canvas = document.getElementById('canvas');
+			var ctx = canvas.getContext('2d');
+			// 绘制都是使用ctx来实现的
+			// 开始绘制路径
+			ctx.beginPath();
+			// ctx.fillStyle = 'red';
+			// ctx.fillRect(100, 100, 200, 60);
+			// 移动绘图点到100, 100点
+			// ctx.moveTo(100, 100);
+			// ctx.lineTo(100, 300);
+			// ctx.lineTo(500, 300);
+			// ctx.lineTo(500,100);
+			// ctx.closePath();
+			// ctx.strokeStyle = 'red';
+			// ctx.lineWidth = 10;
+			// // 线条是虚拟的 我们必须真的让它绘制才行
+			// ctx.stroke();
+			// // 填充颜色
+			// ctx.fillStyle = 'blue';
+			// ctx.fill();
+			// ctx.fillStyle = 'red';
+			// // 方法二 直接使用fillRect快捷api
+			// ctx.fillRect(100, 100, 400, 200);
+			
+			// ctx.beginPath();
+			// ctx.arc(200, 200, 100, 0, false);
+			// // ctx.fillStyle = 'blue';
+			// ctx.stroke();
+			
+			
+			        // 得到canvas画布
+			//         var canvas = document.getElementById('canvas');
+			//         // 画布没有什么用，必须用画布创建渲染上下文才行
+			//         var ctx = canvas.getContext('2d');
+			
+			//         // 绘制圆弧
+			//         ctx.beginPath();
+			//         ctx.arc(200, 200, 100, 0, 1, false);
+			//         ctx.stroke();
+			
+			//         // 绘制圆形
+			//         ctx.beginPath();
+			//         ctx.arc(350, 100, 80, 0, Math.PI * 2, true);
+			//         ctx.fillStyle = 'blue';
+			//         ctx.fill();
+			
+			//         // 同心圆
+			//         for (var i = 0; i < 20; i++) {
+			//             ctx.beginPath();
+			//             ctx.arc(100, 100, 20 + i * 5, 0, Math.PI * 2, true);
+			//             ctx.stroke();
+			//         }
+			    
+			
+			var x = 100;
+			setInterval(function() {
+				// 圆心变化
+				x++;
+				// 清屏
+				ctx.clearRect(0,0,600,600)
+				ctx.beginPath();
+				ctx.arc(x,100,30,0,Math.PI * 2, true);
+				ctx.fillStyle ='blue';
+				ctx.fill();
+			},20)
+		</script>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+<!-- 告诉浏览器这个文档是html5版本  文档声明 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 表示文档的编码，计算机0101  编码类似于密码本，A--0101 -->
+		<meta charset="utf-8">
+		<title>我的第一个网址</title>
+	</head>
+	<body>
+		床前明月光
+		<div style="color: red;">床前明月光</div>
+		<div style="color: red;">床前明月光</div>
+		<span >床前明月光</span>
+		<span >床前明月光2</span>
+		<h1>床前明月光</h1>
+		<h2>床前明月光</h2>
+		<h3>床前明月光</h3>
+		<h4>床前明月光</h4>
+		<h5>床前明月光</h5>
+		<h6>床前明月光</h6>
+		<p>--创建数据库
+create database test
+--创建学生表（Student）
+Create Table Student(
+	Sno char(10) Primary Key,
+	Sname varchar(20) Not Null,
+	Ssex char(2) default '男',
+	Sage tinyint,
+	Sdept char(50)
+)
+--创建课程表（Course）
+Create Table Course(
+	Cno char(8) Primary Key,
+	Cname varchar(30) Not Null,
+	Credit tinyint,
+	Semster tinyint,
+	</p>
+	<hr/>
+	<h1>奇葩新闻</h1>
+	
+	
+	<ul>
+		<li><i>爱睡觉滴啊上<br>电视爱上地加大使得</i></li>
+		<li><em>爱睡觉滴啊上电视爱上地加大使得</em></li>
+		<li><strong>爱睡觉滴啊上电视爱上地加大使得</strong></li>
+		</ul>
+			<!-- img 图像标签 src="图片的地址a"-->
+			<img src="./head.jpg" alt="这是一张图片" title="这里是图片">
+			<!-- <img src="head.jpg" > -->
+			<!-- 图像的地址：
+				 绝对地址：当前的图片在硬盘上的位置  c:/html/<head.jpg  缺点:可移植性比较差</head>
+				 相对地址：参照物-当前所写的文件位置
+						  1.图片在当前写的这个文件的同级，直接写图片的名字就可以了 ./图片名字
+						  2.图片在当前写的这个文件的下一级 从同级开始找，./文件夹/文件夹/.../图片名称
+						  3.图片在当前写的这个html文件的上级 ../   ../文件夹/.../图片名称
+						  -->
+		<!-- a标签 表示 超链接 -->
+		<a href="http://www.baidu.com"target="_blank">百度</a>
+		<a href="http://www.jd.com">京东</a>
+		<a href="http://www.3174512086@qq.com">qq空间</a>
+	
+	</body>
+</html>

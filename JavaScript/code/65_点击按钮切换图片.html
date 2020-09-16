@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="点我" id="btn" />
+		<br>
+		<img src="./images/a.jpg"  id="mv" alt="" width="400" height="300">
+		<script type="text/javascript">
+			// 1. 获取元素
+			var btn = document.getElementById('btn');
+			var mv = document.getElementById('mv');
+			// 2.给按钮注册事件
+			var flag = 1;  // 当flag的值是1 的时候 对应a.jpg  当flag的值是2的时候 对应b.jpg
+			btn.onclick = function() {
+			// 3.切换图片
+			if (flag === 2) {
+				mv.src = "./images/a.jpg";
+				flag = 1;
+			} else if (flag === 1) {
+			    mv.src = './images/b.jpg';
+				flag = 2;
+			}
+			}
+		</script>
+	</body>
+</html>

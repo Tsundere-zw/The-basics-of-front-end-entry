@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 问题：不知道图片的尺寸  宽高 */
+			.wrap{
+				width: 850px;
+				/* border: 1px solid red; */
+				/* 水平居中 */
+				margin:10px auto;
+				/* 设置字体大小为0 解决下面img元素和字体之间有间隙 */
+				font-size: 0;
+			}
+			.wrap-content{
+				width:800px  ;
+				margin: 0 auto;
+			}
+			p{
+				background-color: #453f4b;
+				/* 默认情况下有margin，要把它设置为0 才会和其他元素没有距离 */
+				margin: 0;
+				/* 单独设置字体大小 */
+				font-size:20px;
+				height: 36px;
+				line-height: 36px;
+			}
+			.item{
+				margin-top:8px  ;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- class  可以重复使用-->
+		<div class="wrap">
+			<div class="wrap-content">
+				<!-- 大盒子里面的每一项 -->
+				<div class="item">
+					<img src="../../img/news1.png" >
+					<p>嘻嘻哈哈</p>
+					<div class="item">
+						<img src="../../img/news2.png" >
+						<p>超威洁厕剂</p>
+
+						
+				</div>
+			</div>
+		</div>
+		<pre>
+			for i = 1 to 10
+				print i
+				next i
+		</pre>
+	</body>
+</html>

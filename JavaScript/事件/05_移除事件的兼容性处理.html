@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="按钮"  id="btn">
+		<script src="../code/common.js"></script>
+		<script type="text/javascript">
+			var btn = my$('btn');
+			function btnChick() {
+				alert('hello');
+				// 移除事件
+				removeEventListener(btn, 'click', btnChick);
+			}
+			addEventListener(btn, 'click', btnChick);
+		</script>
+	</body>
+</html>

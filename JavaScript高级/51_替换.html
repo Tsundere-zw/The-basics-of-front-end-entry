@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// 1 替换所有空白
+			var str = " 123AD asadf  asadfasf adf";
+			// trim()  去除前后的空格
+			// console.log(str.trim());
+			// replace() 只能替换掉第一个查找到的内容
+			// console.log(str.replace('','x'));
+			
+			// console.log(str.replace(/\s/g, 'x'));
+			// 用空格切割字符串 然后用join方法用空格作为连接符连接
+			// console.log(str.split(' ').join(''));
+			// 2. 把所有, 和， 替换为
+			var str = "abc,efg,123, abc,123, a";
+			
+			console.log(str.replace(/,|,/g, '.'));
+		</script>
+	</body>
+</html>

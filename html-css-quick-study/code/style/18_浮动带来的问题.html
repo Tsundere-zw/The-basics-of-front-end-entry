@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				}
+			.header{
+				height: 60px;
+				background-color: black;
+			}		
+			.main{
+				/* main高度通常是不固定的 */
+				/* height: 800px; */
+				background-color: gray;
+			}
+			.left{
+				width: 65%;
+				height: 500px;
+				background-color: green;
+				float: left;
+			}
+			.right{
+				width: 30%;
+				height: 700px;
+				background-color: orange;
+				float: right;
+				
+			}
+			.footer{
+				height: 50px;
+				background-color: red;
+				color: white;
+				text-align: center;
+				font-size: 40px;
+				
+			}
+			.clear{
+				clear: both;
+				}
+		</style>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="header"></div>
+		<!-- 网页的主体内容部分 800px-->
+		<div class="main">
+			<!-- 主体内容左边部分 -->
+			<div class="left"></div>
+			<!-- 主体内容右边部分 -->
+			<div class="right"></div>
+			<!-- 清除浮动 -->
+			<div class="clear"></div>
+		</div>
+		<!-- 网页的底部 -->
+		<div class="footer">footer</div>
+	</body>
+</html>

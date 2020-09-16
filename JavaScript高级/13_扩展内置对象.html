@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var array = [5, 4, 1, 8];
+
+			Array.prototype.getSum = function() {
+				// 求数组中中所有偶数的和
+				var sum = 0;
+				for (var i = 0; i < this.length; i++) {
+					if (this[i] % 2 ===0) {
+						sum += this[i];
+					}
+				}
+				return sum;
+			}
+			// 数组或者String 中的prototype是不可以修改的
+			// Array.prototype = {
+			// 	getSum: function() {
+			// 		var sum = 0;
+			// 		for (var i = 0; i < this.length; i++) {
+			// 			if (this[i] % 2 === 0) {
+			// 				sum += this[i];
+			// 			}
+			// 		}
+			// 		return sum;
+			// 	}
+			// }
+			
+			console.dir(Array.prototype);
+			// 会先判断array是不是数组
+			console.log(array.getSum());
+		</script>
+	</body>
+</html>

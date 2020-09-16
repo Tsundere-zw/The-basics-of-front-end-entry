@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="开始" id="btn1">
+		<input type="button" value="取消" id="btn2">
+		
+		<script type="text/javascript">
+			// setInterval()  闹钟 隔一段时间执行 会重复执行
+			
+			var btn1 = document.getElementById('btn1');
+			btn1.onclick = function() {
+				setInterval(function(){
+					console.log('早上八点了')
+				}, 3000);
+			}
+		</script>
+	</body>
+</html>

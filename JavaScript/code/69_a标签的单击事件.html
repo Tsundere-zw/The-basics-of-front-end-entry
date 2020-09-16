@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<a id="link" href="http://www.baidu.com">百度</a>
+		<script type="text/javascript">
+			var link = document.getElementById('link');
+			link.onlick = function () {
+				alert('惦记我了');
+				
+				// 取消a标签的默认行为
+				return flase;
+			}
+		</script>
+	</body>
+</html>

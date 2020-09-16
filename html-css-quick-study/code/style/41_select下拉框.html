@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- select 和 option标签连用 类似于 ul li 
+			 注意：name是加在select身上的 value是加在option身上
+			 size：表示可见选项的条数
+			 mutiple：表示可以按住shift 多选
+		-->
+		<select name="city" size="4" multiple>
+			<!-- 这里加value=北京 发送数据的时候 发送的就是北京 -->
+			<option value="北京">北京</option>
+			<!-- 这里value="" 发送的时候就会等于一个空字符串过去 -->
+			<option value="">上海</option>
+			<!-- 不写value 默认会发送的就是option内部的东西 -->
+			<option>广州</option>
+			<option value="">深圳</option>
+		</select>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var wjl = {
+				name: '王健林',
+				money: 1000000,
+				cars: ['玛莎拉蒂', '特斯拉'],
+				houses: ['别墅', '大别墅'],
+				play: function() {
+					console.log('打高尔夫');
+				}
+			}
+			
+			var wsc = {
+				name: '王思聪'
+			}
+			
+			// // 复制对象的成员给另一个对象
+			// for (var key in wjl) {
+			// 	// 不给wsc复制同名的属性
+			// 	// key 指的就是全部的属性和方法
+			// 	if (wsc[key]) {
+			// 		continue;
+			// 	}
+			// 	wsc[key] = wjl[key];
+			// }
+			// console.dir(wsc);
+			
+			// 对象的拷贝
+			 // 复制对象的成员给另一个对象
+			function extend(parent, child) {
+				for (var key in parent) {
+					// 不给wsc复制同名的属性
+					// key 指的就是全部的属性和方法
+					if (child[key]) {
+						continue;
+					}
+					child[key] = parent[key];
+					}
+			}
+			
+			extend(wjl, wsc);
+			console.dir(wsc);
+		</script>
+	</body>
+</html>

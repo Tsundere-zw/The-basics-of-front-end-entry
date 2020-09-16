@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="text"><br>
+		<input type="button" id="btn" value="获取文本框的值" />
+		<script type="text/javascript">
+			// 1.当页面加载完毕，给所有文本框赋值
+			var inputs = document.getElementsByTagName('input');
+			for (var i = 0; i < inputs.length; i++) {
+				var input = inputs[i];
+				// 根据type判断是否是文本框
+				if (input.type === 'text') {
+					input.value = i;
+				}
+			}
+			
+			// 2.当点击按钮的时候，获取所有文本框的值，并使用 | 分割输出
+		    var btn = document.getElementById('btn');
+			btn.onclick = function() {
+				var s = '';
+				for (var i = 0; i < inputs.length; i++) {
+					var input = inputs[i];
+					// 判断是否是文本框
+					if (input.type === 'text') {
+						s += input.value + '|'; 
+					}
+				}
+				// 把最后一个|去掉   截取字符串的拼接
+				// s.substr(0,s.length - 1)  是从第一个元素截取到倒数第二个元素
+				s = s.substr(0,s.length - 1);
+				console.log(s);
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// 1 call 的应用
+			// Array.prototype.getSum = function() {
+			// 	// this
+			// }
+			// var arr = [1, 2, 3];
+			// arr.getSum();
+			// arr.push();
+			// // 删除数组的属性
+			// arr.splice();
+			
+			// getElementByTagName()
+			// 伪数组
+			var obj = {
+				0: 100,
+				1: 10,
+				2: 11,
+				3: 20,
+				length: 4
+			};
+			// obj['4'] = 30;
+			// obj.length ++;
+			
+			// console.dir(obj);
+			
+			Array.prototype.push.call(obj, 30);
+			// splice(a, b) a:从第几个开始删，b:删除几个 
+			Array.prototype.splice.call(obj, 0, 3);
+			console.dir(obj);
+			
+			var obj = {
+				name: 'zs'
+			};
+			console.log(obj.toString());
+			
+			var arr = [5, 9];
+			console.log(arr.toString());
+			
+			console.log(Object.prototype.toString.call(arr));
+		</script>
+	</body>
+</html>

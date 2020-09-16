@@ -1,0 +1,131 @@
+/* css样式重置：html元素默认会有一些样式，可能影响我们的布局 */
+/* 公共的样式 */
+body,p,li,ul,input{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/* 浮动代码 固定 */
+.clearfix{
+	*zoom: 1;
+}
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+/* 浮动 */
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+
+/* 头部内容 */
+.header{
+	height: 60px;
+	border-bottom:1px solid #dcdcdc;
+	min-width: 960px;
+}
+.header-left{
+	width: 300px;
+	/* background-color: red; */
+	margin-left: 10px;
+}
+.header-left a,.header-left span{
+	/* 让a链接和span里面的文字消失，通过背景图片来显示 */
+	text-indent: -9999px;
+	display: inline-block;
+}
+.header-left a{
+	background-color: black;
+	height: 44px;
+	width: 170px;
+	background: url(../img/download-all.gif);
+	background-position: -644px 0px;
+	margin-top: 10px;
+}
+.header-left span{
+	height: 38px;
+	width: 86px;
+	background: url(../img/download-all.gif);
+	background-position: -691px -47px;
+}
+.header-right{
+	width: 300px;
+	margin-right: 5px;
+	font-size: 12px;
+	margin-top: 38px;
+}
+.header-right a{
+		color: #2974b6;
+}
+.header-right .first-a{
+	color: #f8645c;
+	}
+.download-menu{
+	width: 978px;
+	margin:0 auto;
+}
+.download-menu span{
+	text-indent: -999px;
+	display: block;
+}
+.tab-menu{
+	margin: 0 auto;
+}
+.tab-menu li{
+	width: 161px;
+	height: 93px;
+	/* border: 1px solid red; */
+	float: left;	
+}
+
+.tab-menu li a{
+	display: block;
+	width: 161px;
+	margin-top: 30px;
+	height: 40px;
+	background: url(../img/download-all.gif) no-repeat;	
+}
+.tab-menu li:nth-of-type(1) a{
+	background-position: 8px -129px;
+}
+.tab-menu li:nth-of-type(1) a:hover{
+	background-position: 8px -185px;
+}
+.tab-menu li:nth-of-type(2) a{
+	background-position: -160px -129px;
+}
+.tab-menu li:nth-of-type(2) a:hover{
+	background-position: -160px -185px;
+}
+.tab-menu li:nth-of-type(3) a{
+	background-position: -340px -129px;
+}
+.tab-menu li:nth-of-type(3) a:hover{
+	background-position: -340px -185px;
+}
+.tab-menu li:nth-of-type(4) a{
+	background-position: -492px -129px;
+}
+.tab-menu li:nth-of-type(4) a:hover{
+	background-position: -492px -185px;
+}
+.tab-menu li:nth-of-type(5) a{
+	background-position: -626px -129px;
+}
+.tab-menu li:nth-of-type(5) a:hover{
+	background-position: -626px -185px;
+}
+.tab-menu li:nth-of-type(6) a{
+	background-position: -790px -185px;
+}

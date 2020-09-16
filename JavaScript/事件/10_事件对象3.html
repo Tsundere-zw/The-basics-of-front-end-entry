@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				height: 1000px;
+			}
+			#box {
+				margin: 100px;
+				margin-top: 500px;
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<script type="text/javascript">
+			var box = document.getElementById('box');
+			box.onclick = function(e) {
+				e = e || window.event;
+				
+				// 获取的鼠标在浏览器可视区域的坐标
+				// console.log(e.clientX);
+				// console.log(e.clientY);
+				
+				// 获取的鼠标在当前页面的坐标
+				console.log(e.pageX);
+				console.log(e.pageY);
+			}
+		</script>
+	</body>
+</html>

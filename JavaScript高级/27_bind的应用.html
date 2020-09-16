@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// 3 bind的应用 改变this指向
+			
+			var obj = {
+				name: 'zs',
+				fun: function() {
+					setInterval(function() {
+						console.log(this.name);
+					}.bind(this),1000);
+				}
+			}
+			
+			obj.fun();
+			
+			btn.onclick = function() {
+				// 事件处理函数中的this  是触发该事件的对象
+				
+				// 通过bind 改变事件处理函数中的this的指向
+			}.bind(obj);
+		</script>
+	</body>
+</html>

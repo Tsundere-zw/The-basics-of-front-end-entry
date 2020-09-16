@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 2.用css样式去修饰html元素 -->
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			.header{
+				/* 用来填充背景 */
+				/* 用来限定整个头部的高度 */
+				height: 60px;
+				
+				background-color: black;
+				
+			}
+			
+			.header-content{
+				width: 1100px;
+				height: 59px;
+				border: 1px solid red;
+				/* 水平居中 */
+				margin: 0 auto;
+			}
+			#logo{
+				/* 垂直对齐方式 */
+				vertical-align: top;
+				width: 200px;
+				height: 50px;
+				
+			}
+			
+			a{
+				height: 60px;
+				width: 48px;
+				border: 1px solid green;
+				/* 让a标签在一行内显示  并且支持宽高 */
+				display: inline-block;
+				border: 1px solid green;
+				color:white;
+				/* 去掉a标签的下划线 */
+				text-decoration: none;
+				/* 让文字水平居中 */
+				text-align: center;
+				/* 让文字垂直就居中 */
+				line-height: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 1.搭建网页结构 -->
+		<div class="header">
+			<div class="header-content">
+				<!-- 左边部分 -->
+				<div class="header-left">	
+					<a href="" id="logo"><img src="../../img/logo.png" ></a>
+					<a href="">实战</a>
+					<a href="">课程</a>
+					<a href="">班级</a>
+					<a href="">社区</a>
+					<a href="">博客</a>
+				</div>
+				<!-- 右边部分 -->
+				<div class="header-right">		
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

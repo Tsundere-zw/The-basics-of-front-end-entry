@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			#box {
+				margin: 100px;
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">			
+		</div>
+		<script type="text/javascript">
+			var box = document.getElementById('box');
+			// box.onclick = function (e) {
+			// 	e = e || window.event;
+			// 	// 获取事件名称
+			// 	console.log(e.type);
+			// }
+			
+			box.onclick = fn;
+			box.onmouseover = fn;
+			box.onmouseout = fn;
+			function fn (e) {
+				e = e || window.event;
+				switch (e.type) {
+					case 'click':
+					console.log('点击box');
+					break;
+					case 'mouseover':
+					console.log('鼠标经过box');
+					break;
+					case 'mouseout':
+					console.log('鼠标离开box');
+					break;
+				}
+			}
+		</script>
+	</body>
+</html>

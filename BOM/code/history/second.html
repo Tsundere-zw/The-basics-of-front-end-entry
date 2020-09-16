@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>second</h1>
+		<input type="button" id="bnt1" value="后退" />
+		<script type="text/javascript">
+			var btn1 = document.getElementById('btn1');
+			btn1.onclick = function() {
+				// history.back();
+				history.go(-1)
+			}
+		</script>
+	</body>
+</html>

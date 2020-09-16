@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				height: 1000px;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="../code/common.js"></script>
+		<script type="text/javascript">
+			// e.clientX/e.clientY   鼠标在可视区域中的位置
+			// e.pageX/e.pageY		 鼠标在页面中的位置 有兼容性问题 从IE9以后才支持
+			
+			// pageY = clientY + 页面滚动出去的距离
+			
+			document.onclick = function(e) {
+				e = e || window.event;
+				// 输出页面滚动出去的距离
+				// console.log(document.body.scrollLeft);
+				// console.log(document.body.scrollTop);
+				
+				// // documentElement  文档的根元素  html标签
+				// console.log(document.documentElement.scrollLeft);
+				// console.log(document.documentElement.scrollTop);
+				console.log(getPage().pageX);
+				console.log(getPage().pageY);
+			}
+			
+			// 获取鼠标在页面的位置，处理浏览器兼容性
+			function getPage(e) {
+				var pageX = e.pageX || e.clientX + getScroll().scrollLeft;
+				var pageY = e.pageY || e.clientY + getScroll().scrollTop;
+				return {
+					pageX: pageX,
+					pageY: pageY
+				}
+			}
+			
+			
+		</script>
+	</body>
+</html>

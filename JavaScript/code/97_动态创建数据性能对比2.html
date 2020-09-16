@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		function fn() {
+			// + 表示正数
+			var d1 = +new Date();
+			
+			var array = [];
+			for (var i = 0; i < 1000; i++) {
+				array.push('<div style = "wdith:100px; height:2px; border:1px solid blue;"></div>');
+			}
+			document.body.innerHTML = array.join('');
+			var d2 = +new Date();
+			console.log(d2 - d1);
+		}
+		fn();
+	</script>
+</html>

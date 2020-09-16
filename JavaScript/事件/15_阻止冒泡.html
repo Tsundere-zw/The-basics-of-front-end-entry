@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#box1 {
+				width: 500px;
+				height: 500px;
+				background-color: #0099CC;
+			}
+			#box2 {
+				width: 250px;
+				height: 250px;
+				background-color: #808080;
+			}
+			#box3 {
+				width: 125px;
+				height: 125px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box1">
+			<div id="box2">
+				<div id="box3">
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			// 事件冒泡
+			var box1 = document.getElementById('box1');
+			var box2 = document.getElementById('box2');
+			var box3 = document.getElementById('box3');
+			
+			var array = [box1, box2, box3];
+			
+			for (var i = 0; i < array.length; i++) {
+				var box = array[i];
+				box.onclick = function(e) {
+					console.log(this.id);
+					
+					
+					// Propagation 传播
+					// 停止事件传播   取消冒泡
+					// 标准的DOM方法
+					// e.stopPropagation();
+					
+					// 取消冒泡 非标准的方式 老版本的IE支持
+					e.cancelBubble = true; 
+				}
+			}
+		</script>
+	</body>
+</html>

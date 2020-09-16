@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>eatProblem</title>
+  <style type="text/css">
+  	select {
+		width: 300px;
+		height: 300px;
+		background-color: #33cccc;
+		font-size: 80px;
+	}
+	input {
+		width: 100px;
+		height: 100px;
+	}
+  </style>
+</head>
+<body>
+  <input type="button" value="命运的安排" id="btnSet">
+  <select id="selCities">
+    <option value="1">炒饭</option>
+    <option value="2">炸酱面</option>
+    <option value="3">霸王</option>
+    <option value="4">米粉</option>
+    <option value="5">外卖</option>
+	<option value="6">鸡公煲</option>
+	<option value="7">烤鱼</option>
+	<option value="8">食堂</option>
+	<option value="9">修仙</option>
+  </select>
+  <script>
+    // 1 给按钮注册事件
+    var btnSet = document.getElementById('btnSet');
+    btnSet.onclick = function () {
+      // 2 获取下拉框中的所有option
+      var selCities = document.getElementById('selCities');
+      var options = selCities.getElementsByTagName('option');
+      // 3 随机生成索引
+      // Math.random() -> [0, 1)
+      // Math.random() * 5 -> [0, 5)
+      var randomIndex = parseInt(Math.random() * options.length);
+      // 4 根据索引获取option，并让option选中
+      var option = options[randomIndex];
+      option.selected = true;
+    }
+    
+    
+    
+  </script>
+
+
+</body></html>
