@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="lib/vue-2.4.0.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!-- 对象就是无序键值对的集合 -->
+			<!-- <h1 :style="styleObj1">这是一个h1</h1> -->
+			<h1 :style=" [styleObj1, styleObj2 ]">这是一个h1</h1>
+		</div>
+		
+		<script>
+			// 创建Vue实例 得到Viewmodel
+			var vm = new Vue({
+				el: '#app',
+				data: {
+					styleObj1: {color: 'red', 'font-weight': 200},
+					styleObj2: {'font-style': 'italic'}
+				},
+				methods: {}
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="lib/vue-2.4.0.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<p :style="filter">{{msg | msgformat('帅哥', '123')}}</p>
+		</div>
+		<script>
+			// 此时 帅哥为arg1   123 为arg2   msgformat括号中为替换的东西  可以进行字符串的拼接
+			Vue.filter('msgformat', function(msg, arg1 ,arg2) {
+				
+				// 使用正则表达式进行全部的梦想检测
+				return msg.replace(/梦想/g, arg1 + arg2)
+			})
+			var vm = new Vue({
+				el: "#app",
+				data: {
+					msg: "我是一个有梦想的人  以后想完成我的梦想 不知道我能不能完成我的梦想",
+					// 使用vue中的style样式 用v-bind 简写 ： 进行数据绑定
+					filter: {color: "red", "font-weight": 200, "font-size": "30px"},
+					msgformat: {color: "green"}
+				},
+				methods: {}
+			})
+		</script>
+	</body>
+</html>
