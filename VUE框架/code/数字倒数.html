@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="lib/vue-2.4.0.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<p>(<span>{{number}}</span>)</p>
+		</div>
+	</body>
+	<script>
+		var vm = new Vue({
+			el: "#app",
+			data: {
+				// msg: "()",
+				number: 15,
+			},
+			methods: {
+			}
+		});
+			var setimeout = setInterval(() => {
+				vm.number--;
+				if (vm.number == 0) {
+					clearInterval(setimeout)
+				}
+			},1000)
+	</script>
+</html>

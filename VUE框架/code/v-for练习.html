@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script src="lib/vue-2.4.0.js"></script>
+	<body>
+		<div id="app">
+			<p v-for="(item, i) in list">{{i}}------- 每一项 {{item}}</p>
+			<p v-for="(user, i) in list1">Id:	{{user.id}}---名字:	 {{user.name}}--- 索引:	{{i}}</p>
+			<p v-for="(val, key, i) in user">值是：	{{val}}---键是：{{key}}---索引: {{i}}</p>
+			<p v-for="count in 10">这是第{{count}}次循环</p>
+			<label>Id:
+				<input type="text" v-model="Id">
+			</label>
+			<label>Name:
+				<input type="text" v-model="Name">
+			</label>
+			<input type="button"value="添加" @click="add">
+			
+			<p v-for="item in list2":key="item.Id">
+				<input type="checkbox">
+				{{item.Id}}--------{{item.Name}}
+			</p>
+			
+		</div>
+	
+	<script>
+		var vm = new Vue({
+			el: "#app",
+			data: {
+				Id: "",
+				Name: "",
+				list: [1, 2, 3, 4, 5, 6],
+				list1: [
+					{id: 1, name: "zs"},
+					{id: 2, name: "ls"},
+					{id: 3, name: "lbq"},
+					{id: 4, name: "zw"},
+					{id: 5, name: "gd"}
+				],
+				user: {
+					id: 1,
+					name: "史蒂芬二狗",
+					sex: "男"
+				},
+				list2: [
+					{Id: 1, Name: "李斯"},
+					{Id: 2, Name: "嬴政"},
+					{Id: 3, Name: "李世明"},
+					{Id: 4, Name: "傲娇"},
+					{Id: 5, Name: "倩倩"},
+				]
+			},
+			methods: {
+				add() {
+					this.list2.push({Id: this.Id, Name: this.Name})
+			}
+		},
+		})
+	</script>
+	</body>
+</html>
